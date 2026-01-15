@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'un étudiant en Sciences des Données spécialisé en modélisation statistique">
+    <title>Portfolio | Étudiant en Sciences des Données</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header role="banner">
+        <div class="header-container">
+            <div class="header-text">
+                <h1>Portfolio</h1>
+                <p class="tagline">Étudiant en Sciences des Données, spécialisé en modélisation statistique</p>
+            </div>
+            <div class="header-image">
+                <img src="./image/personne-deprimee-fond-blanc-illustration-vectorielle-dessin-au-trait_969863-1165.avif" alt="Portrait de l'étudiant en Sciences des Données" width="200" height="200">
+            </div>
+        </div>
+
+        <nav aria-label="Navigation principale" role="navigation">
+            <ul class="menu">
+                <li><a href="./html/index.html" aria-current="page">Accueil</a></li>
+                <li class="submenu">
+                    <a href="./html/a-propos.html">À propos de moi</a>
+                    <ul class="dropdown">
+                        <li><a href="./html/centres-interet.html">Centres d'intérêt</a></li>
+                        <li><a href="./html/cv.html">Mon CV</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="./html/projets.html">Projets</a>
+                    <ul class="dropdown">
+                        <li><a href="./html/but1.html">BUT SD 1ère année</a></li>
+                        <li><a href="./html/but2.html">BUT SD 2ème année</a></li>
+                    </ul>
+                </li>
+                <li><a href="./html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="formation" aria-labelledby="formation-title">
+            <div class="section-container">
+                <h2 id="formation-title">Ma formation</h2>
+                <div class="content">
+                    <p>
+                        Actuellement étudiant en <strong>BUT Sciences des Données</strong> à l'IUT de Carcassonne, j'acquiers des compétences solides en analyse de données et en prise de décision éclairée. Cette formation me permet de développer mes compétences en programmation, modélisation statistique, gestion de projets et visualisation de données.
+                    </p>
+                    <p>
+                        Les laboratoires informatiques de l'IUT sont équipés des technologies et logiciels d'analyse de données les plus utilisés en entreprise (Python, R, SQL, Power BI, etc.), ce qui nous permet d'acquérir une expérience pratique avec des outils professionnels.
+                    </p>
+                    <p class="highlight">
+                        Je suis convaincu que ces compétences techniques et méthodologiques seront déterminantes pour ma future carrière dans le domaine de la data science.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="metier" aria-labelledby="metier-title">
+            <div class="section-container">
+                <h2 id="metier-title">Mon projet professionnel</h2>
+                <div class="content">
+                    <p>
+                        Mon objectif est de devenir <strong>ingénieur data scientist</strong> ou <strong>ingénieur en machine learning</strong>. Je projette d'intégrer une école d'ingénieurs pour me spécialiser davantage et développer des compétences avancées en modélisation prédictive et en intelligence artificielle.
+                    </p>
+                    <div class="objectives">
+                        <h3>Mes ambitions :</h3>
+                        <ul>
+                            <li>Résoudre des problèmes complexes grâce à l'analyse de données</li>
+                            <li>Travailler en équipes pluridisciplinaires</li>
+                            <li>Contribuer à des projets innovants ayant un impact positif</li>
+                            <li>Développer des solutions data-driven pour les entreprises</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" aria-labelledby="contact-title">
+            <div class="section-container">
+                <h2 id="contact-title">Contactez-moi</h2>
+                <form id="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Nom et prénom :</label>
+                        <input type="text" id="name" name="name" required aria-required="true" placeholder="Votre nom complet">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Adresse email :</label>
+                        <input type="email" id="email" name="email" required aria-required="true" placeholder="votre@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet :</label>
+                        <input type="text" id="subject" name="subject" placeholder="Objet de votre message">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Votre message..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>BUT Sciences des Données</h3>
+                <img src="./image/Logo.png" alt="Logo de l'IUT de Carcassonne" width="100" height="100">
+                <p>Formation en Sciences des Données et Data Science</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>À propos du BUT</h3>
+                <p>
+                    Le Bachelor Universitaire de Technologie en Sciences des Données forme des professionnels capables de collecter, traiter, analyser et interpréter des données massives pour en extraire de la valeur et supporter la prise de décision.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Localisation</h3>
+                <address>
+                    IUT de Carcassonne<br>
+                    1 Rue Pierre-Paul Riquet<br>
+                    11000 Carcassonne, France<br>
+                    <a href="mailto:contact@iut-carcassonne.fr">contact@iut-carcassonne.fr</a>
+                </address>
+            </div>
+
+            <div class="footer-section">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+                <p class="copyright">&copy; 2024 Portfolio - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js" defer></script>
+</body>
+</html>
