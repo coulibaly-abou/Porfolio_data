@@ -572,3 +572,17 @@ nav {
         padding: 3rem 1.2rem;
     }
 }
+/* Initiales à la place de l'illustration */
+.header-image .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #1d4ed8;
+    color: #ffffff;
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
