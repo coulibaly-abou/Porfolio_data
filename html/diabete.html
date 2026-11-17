@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAE4-EMS-01 — Expliquer ou prédire une variable : analyse statistique et modélisation du risque de diabète de type 2 à partir de la base Pima Indians Diabetes.">
+    <title>Portfolio | Prédiction du diabète</title>
+    <link rel="stylesheet" href="../css/but1.css">
+</head>
+<body>
+
+    <header class="hero" role="banner">
+        <nav class="navbar" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a class="logo" href="../index.html">Portfolio</a>
+
+                <ul class="menu">
+                    <li><a href="../index.html">Accueil</a></li>
+
+                    <li class="submenu">
+                        <a href="../index.html#apropos" aria-haspopup="true">À propos</a>
+                        <ul class="dropdown">
+                            <li><a href="../html/interet.html">Centres d'intérêt</a></li>
+                            <li><a href="../html/cv.html">Mon CV</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu">
+                        <a href="../index.html#projets" aria-haspopup="true">Autres projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../index.html#projet-scoring">Scoring crédit (BUT3)</a></li>
+                            <li><a href="../index.html#projet-ligue1">Ligue 1 ivoirienne (BUT3)</a></li>
+                            <li><a href="../html/but1.html">Starlink</a></li>
+                            <li><a href="../html/but2.html">Station Météo</a></li>
+                            <li><a href="../html/stage.html">Stage Power BI</a></li>
+                            <li><a href="../html/breakingbad.html">Datawarehouse Breaking Bad</a></li>
+                            <li><a href="../html/miel.html">Sensométrie des miels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-container">
+            <div class="header-text">
+                <p class="eyebrow">SAE4-EMS-01 — BUT SD 2ème année</p>
+
+                <h1 class="hero-title">Expliquer ou prédire une variable : <span class="text-accent">le diabète de type 2</span></h1>
+
+                <p class="tagline">
+                    Analyse statistique et modélisation, réalisées en binôme avec Taslima Diallo, à partir
+                    de la base Pima Indians Diabetes (NIDDK) — de la régression linéaire à l'arbre de décision.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projet-diabete">Voir le projet</a>
+                    <a class="btn btn-secondary" href="../html/cv.html">Consulter mon CV</a>
+                </div>
+            </div>
+
+            <div class="header-image">
+                <img src="../image/personne-deprimee-fond-blanc-illustration-vectorielle-dessin-au-trait_969863-1165.avif"
+                     alt="Portrait de l'étudiant en Sciences des Données">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="project-card" id="projet-diabete">
+
+            <div class="project-header">
+                <span class="project-badge">SAE4-EMS-01 — 2025-2026</span>
+                <h2>Vue d'ensemble du projet</h2>
+            </div>
+
+            <!-- OBJECTIF -->
+            <section class="project-row" id="objectif">
+                <div class="project-image">
+                    <img src="../image/analyse1.png" alt="Tableau et graphique d'analyse statistique">
+                </div>
+
+                <div class="project-content">
+                    <h3>Objectif &amp; problématique</h3>
+                    <p>
+                        Le diabète de type 2 est une maladie multifactorielle. L'objectif de cette étude,
+                        réalisée à partir de la base du <strong>National Institute of Diabetes and Digestive
+                        and Kidney Diseases</strong> (femmes amérindiennes Pima, 768 observations), était de
+                        déterminer dans quelle mesure des caractéristiques biomédicales (glucose, IMC, âge,
+                        insuline, pression artérielle...) permettent d'expliquer et de prédire la présence
+                        d'un diabète de type 2 (variable cible <code>Outcome</code>).
+                    </p>
+                    <ul class="tag-list">
+                        <li>R</li>
+                        <li>Régression linéaire &amp; multiple</li>
+                        <li>Arbre de décision</li>
+                        <li>ANOVA</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PREPARATION -->
+            <section class="project-row reverse" id="preparation">
+                <div class="project-image">
+                    <img src="../image/code1.png" alt="Extrait de code de traitement de données">
+                </div>
+
+                <div class="project-content">
+                    <h3>Préparation des données</h3>
+                    <p>
+                        Après importation du fichier CSV sous R, les variables ont été renommées et
+                        typées (facteurs pour <code>Outcome</code>, <code>waist_risk</code>,
+                        <code>metabolic_risk</code>). La détection des valeurs manquantes a révélé
+                        que la quasi-totalité des variables était complète, à l'exception de
+                        <code>Glucose_Insulin_Ratio</code>, comportant <strong>48,7 % de valeurs
+                        manquantes</strong>, traitées par imputation à la moyenne.
+                    </p>
+                    <p>
+                        L'analyse exploratoire a ensuite comparé les distributions (grossesses, glucose,
+                        variables dérivées) selon le statut diabétique : les patientes diabétiques
+                        présentent des valeurs significativement plus élevées de glucose, d'IMC, de tour de
+                        taille et d'indicateurs de résistance à l'insuline.
+                    </p>
+                </div>
+            </section>
+
+            <!-- MODELISATION -->
+            <section class="project-row" id="modelisation">
+                <div class="project-image">
+                    <img src="../image/concept-about-statistics-data-models-and-analysis-on-a-transparent-H6B1TK.jpg" alt="Concept d'analyse et de modélisation statistique">
+                </div>
+
+                <div class="project-content">
+                    <h3>Régression linéaire &amp; multiple</h3>
+                    <p>
+                        Une régression linéaire simple (Âge ~ Glucose) a d'abord été testée :
+                        R² = 0,153, montrant qu'un seul facteur explique mal la glycémie. En intégrant
+                        l'ensemble des variables via une régression multiple avec sélection pas à pas
+                        (méthodes descendante, ascendante et mixte), le modèle final atteint un
+                        <strong>R² ajusté de 0,338</strong>, avec insuline, IMC et âge comme prédicteurs
+                        significatifs du glucose.
+                    </p>
+                    <div class="code-block">Glucose = 77.8 + 0.09 · Insuline + 0.31 · IMC + 0.48 · Age + ...<br>R² ajusté (modèle final) = 0.338</div>
+                </div>
+            </section>
+
+            <!-- ARBRE DE DECISION -->
+            <section class="project-row reverse" id="arbre">
+                <div class="project-image">
+                    <img src="../image/EarthSat_HD_lrg.jpg" alt="Illustration abstraite de classification de données">
+                </div>
+
+                <div class="project-content">
+                    <h3>Arbre de décision (classification)</h3>
+                    <p>
+                        Un arbre de décision (algorithme CART, 70 % train / 30 % test) a été construit pour
+                        prédire directement le statut diabétique. La variable la plus discriminante,
+                        <code>age_glucose_waist</code>, sépare dès le premier nœud les patientes à faible
+                        risque (92 % non diabétiques) des autres.
+                    </p>
+                    <div class="stat-grid">
+                        <div class="stat-tile">
+                            <span class="stat-value">72,9 %</span>
+                            <span class="stat-label">Accuracy</span>
+                        </div>
+                        <div class="stat-tile">
+                            <span class="stat-value">0,831</span>
+                            <span class="stat-label">Précision</span>
+                        </div>
+                        <div class="stat-tile">
+                            <span class="stat-value">0,787</span>
+                            <span class="stat-label">F1-score</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONCLUSION -->
+            <section class="project-row conclusion" id="conclusion">
+                <div class="project-content">
+                    <h3>Conclusion</h3>
+                    <p>
+                        Ce projet a permis de mettre en pratique une chaîne complète d'analyse statistique :
+                        nettoyage et imputation des données, étude des corrélations, modélisation par
+                        régression et par arbre de décision, jusqu'à l'interprétation métier des résultats.
+                        Il confirme la nature multifactorielle du diabète de type 2 et les limites d'un
+                        modèle simple face à un phénomène biomédical complexe.
+                    </p>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>BUT Sciences des Données</h3>
+                <p>Formation spécialisée en analyse et exploitation des données.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Projet</h3>
+                <p>SAE4-EMS-01, réalisé avec Taslima Diallo — IUT de Carcassonne.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <p><a href="../index.html">Retour à l'accueil</a></p>
+                <p><a href="../html/cv.html">Consulter mon CV</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

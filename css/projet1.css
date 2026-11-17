@@ -1,0 +1,99 @@
+/* ===== BODY ===== */
+body {
+    font-family: "DM Serif", serif;
+    margin: 0;
+    padding: 0;
+    background: url(../image/pr.jpg) center / cover no-repeat;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: blue;
+    color: whitesmoke;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    text-transform: uppercase;
+   
+}
+
+/* ===== TITRE ===== */
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ===== TEXTE ===== */
+header p {
+    margin: 10px 0;
+    text-transform: none;
+}
+
+
+
+/* ===== NAVIGATION ===== */
+nav {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+/* ===== LIENS ===== */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: aqua;
+}
+
+/* ===== SOUS-MENU ===== */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: navy;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 10px;
+    min-width: 180px;
+}
+
+/* éléments du sous-menu */
+.dropdown li {
+    padding: 8px 15px;
+}
+
+.dropdown li a {
+    color: white;
+    text-transform: none;
+}
+
+.dropdown li a:hover {
+    color: aqua;
+}
+
+/* affichage au survol */
+.submenu:hover .dropdown {
+    display: block;
+}

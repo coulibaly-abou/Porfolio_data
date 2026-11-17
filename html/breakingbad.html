@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAÉ 3-02 — Intégration de données dans un datawarehouse : conception d'une base décisionnelle dédiée à la série Breaking Bad (scraping Python, ETL FME, PostgreSQL).">
+    <title>Portfolio | Datawarehouse Breaking Bad</title>
+    <link rel="stylesheet" href="../css/but1.css">
+</head>
+<body>
+
+    <header class="hero" role="banner">
+        <nav class="navbar" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a class="logo" href="../index.html">Portfolio</a>
+
+                <ul class="menu">
+                    <li><a href="../index.html">Accueil</a></li>
+
+                    <li class="submenu">
+                        <a href="../index.html#apropos" aria-haspopup="true">À propos</a>
+                        <ul class="dropdown">
+                            <li><a href="../html/interet.html">Centres d'intérêt</a></li>
+                            <li><a href="../html/cv.html">Mon CV</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu">
+                        <a href="../index.html#projets" aria-haspopup="true">Autres projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../index.html#projet-scoring">Scoring crédit (BUT3)</a></li>
+                            <li><a href="../index.html#projet-ligue1">Ligue 1 ivoirienne (BUT3)</a></li>
+                            <li><a href="../html/but1.html">Starlink</a></li>
+                            <li><a href="../html/but2.html">Station Météo</a></li>
+                            <li><a href="../html/stage.html">Stage Power BI</a></li>
+                            <li><a href="../html/diabete.html">Prédiction du diabète</a></li>
+                            <li><a href="../html/miel.html">Sensométrie des miels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-container">
+            <div class="header-text">
+                <p class="eyebrow">SAÉ 3-02 — BUT SD 2ème année</p>
+
+                <h1 class="hero-title">Datawarehouse <span class="text-accent">Breaking Bad</span></h1>
+
+                <p class="tagline">
+                    Conception, seul, d'une base de données décisionnelle : scraping des données de la série,
+                    modélisation en étoile et en flocon, chargement dans PostgreSQL via un pipeline ETL.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projet-bb">Voir le projet</a>
+                    <a class="btn btn-secondary" href="../html/cv.html">Consulter mon CV</a>
+                </div>
+            </div>
+
+            <div class="header-image">
+                <img src="../image/personne-deprimee-fond-blanc-illustration-vectorielle-dessin-au-trait_969863-1165.avif"
+                     alt="Portrait de l'étudiant en Sciences des Données">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="project-card" id="projet-bb">
+
+            <div class="project-header">
+                <span class="project-badge">SAÉ 3.02 — Projet individuel</span>
+                <h2>Vue d'ensemble du projet</h2>
+            </div>
+
+            <!-- CONTEXTE -->
+            <section class="project-row" id="contexte">
+                <div class="project-image">
+                    <img src="../image/code1.png" alt="Extrait de code de traitement de données">
+                </div>
+
+                <div class="project-content">
+                    <h3>Contexte</h3>
+                    <p>
+                        Objectif : concevoir et mettre en place une base de données décisionnelle dédiée à la
+                        série <em>Breaking Bad</em>, centralisant saisons, épisodes, lieux, personnages,
+                        actions liées au trafic de drogue, audiences et récompenses, à partir de sources
+                        hétérogènes (<a href="https://breakingbad.fandom.com" target="_blank" rel="noopener noreferrer">breakingbad.fandom.com</a>
+                        et Wikipédia).
+                    </p>
+                    <ul class="tag-list">
+                        <li>Python</li>
+                        <li>BeautifulSoup</li>
+                        <li>FME</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- MODELISATION -->
+            <section class="project-row reverse" id="modelisation">
+                <div class="project-image">
+                    <img src="../image/analyse1.png" alt="Tableau et graphique d'analyse de données">
+                </div>
+
+                <div class="project-content">
+                    <h3>Modélisation des données</h3>
+                    <p>
+                        Un Modèle Conceptuel de Données a d'abord formalisé les entités (saison, épisode,
+                        personnage, acteur, lieu, récompense, catégorie...) et leurs associations. Il a
+                        ensuite été décliné en <strong>modèle en étoile</strong>, autour d'une table de faits
+                        <code>fait_apparition</code> (durée, nombre de scènes, importance du rôle) reliée à
+                        sept dimensions, puis en <strong>modèle en flocon</strong> normalisé pour réduire la
+                        redondance (hiérarchie saison → épisode, personnage → acteur, récompense →
+                        catégorie).
+                    </p>
+                </div>
+            </section>
+
+            <!-- ETL -->
+            <section class="project-row" id="etl">
+                <div class="project-image">
+                    <img src="../image/IUT-Logo2-Carcassonne-T1.png" alt="Logo de l'IUT de Carcassonne">
+                </div>
+
+                <div class="project-content">
+                    <h3>Pipeline ETL</h3>
+                    <p>
+                        L'extraction repose sur un programme Python (requests + BeautifulSoup) qui parcourt
+                        le wiki de la série pour en extraire saisons, épisodes, résumés, réalisateurs,
+                        scénaristes et acteurs, exportés en CSV. Un script de nettoyage traduit ensuite les
+                        données de l'anglais vers le français et harmonise les caractères spéciaux. Le
+                        chargement final dans PostgreSQL est orchestré via des flux <strong>FME</strong>
+                        (Attribute Manager, Feature Merger, Duplicate Filter) qui alimentent une quinzaine de
+                        tables reliées par clés étrangères.
+                    </p>
+                    <div class="code-block">CREATE TABLE episode(<br>&nbsp;&nbsp;id_episode INT PRIMARY KEY,<br>&nbsp;&nbsp;titre TEXT NOT NULL,<br>&nbsp;&nbsp;note_IMDB DOUBLE,<br>&nbsp;&nbsp;id_saison INT REFERENCES saison(id_saison)<br>);</div>
+                </div>
+            </section>
+
+            <!-- REQUETES -->
+            <section class="project-row reverse" id="requetes">
+                <div class="project-image">
+                    <img src="../image/data-analyst.jpg" alt="Illustration d'un data analyst au travail">
+                </div>
+
+                <div class="project-content">
+                    <h3>Exploitation SQL</h3>
+                    <p>
+                        Une dizaine de requêtes de test valident la base : personnages impliqués dans la
+                        vente de drogue par saison, audience moyenne par pays et par saison, récompenses par
+                        catégorie, ou encore distinction entre personnages principaux et secondaires — autant
+                        de cas d'usage typiques d'un entrepôt de données décisionnel.
+                    </p>
+                    <div class="stat-grid">
+                        <div class="stat-tile">
+                            <span class="stat-value">15+</span>
+                            <span class="stat-label">Tables reliées</span>
+                        </div>
+                        <div class="stat-tile">
+                            <span class="stat-value">2</span>
+                            <span class="stat-label">Modèles (étoile / flocon)</span>
+                        </div>
+                        <div class="stat-tile">
+                            <span class="stat-value">10</span>
+                            <span class="stat-label">Requêtes de validation</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONCLUSION -->
+            <section class="project-row conclusion" id="conclusion">
+                <div class="project-content">
+                    <h3>Conclusion</h3>
+                    <p>
+                        Ce projet individuel couvre l'ensemble d'une démarche décisionnelle : collecte par
+                        scraping, nettoyage et traduction, modélisation dimensionnelle et chargement ETL
+                        automatisé. Il illustre ma capacité à concevoir seul une base de données exploitable
+                        pour l'analyse, de la donnée brute jusqu'à la requête métier.
+                    </p>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>BUT Sciences des Données</h3>
+                <p>Formation spécialisée en analyse et exploitation des données.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Projet</h3>
+                <p>SAÉ 3-02, encadrée par Mme Ufarte Isabelle — IUT de Carcassonne.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <p><a href="../index.html">Retour à l'accueil</a></p>
+                <p><a href="../html/cv.html">Consulter mon CV</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
