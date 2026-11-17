@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAE 3.EMS.5 — Collecte automatisée de données par un IoT : conception d'une station météo connectée (Arduino, Bluetooth, application mobile, base de données MySQL, Google Sheets).">
+    <title>Portfolio | Station Météo IoT</title>
+    <link rel="stylesheet" href="../css/but1.css">
+</head>
+<body>
+
+    <header class="hero" role="banner">
+        <nav class="navbar" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a class="logo" href="../index.html">Portfolio</a>
+
+                <ul class="menu">
+                    <li><a href="../index.html">Accueil</a></li>
+
+                    <li class="submenu">
+                        <a href="../index.html#apropos" aria-haspopup="true">À propos</a>
+                        <ul class="dropdown">
+                            <li><a href="../html/interet.html">Centres d'intérêt</a></li>
+                            <li><a href="../html/cv.html">Mon CV</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu">
+                        <a href="#projet-meteo" aria-haspopup="true">Ce projet</a>
+                        <ul class="dropdown">
+                            <li><a href="#materiel">Matériel &amp; Arduino</a></li>
+                            <li><a href="#application-mobile">Application mobile</a></li>
+                            <li><a href="#backend">Stockage &amp; Web</a></li>
+                            <li><a href="#conclusion">Conclusion</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu">
+                        <a href="../index.html#projets" aria-haspopup="true">Autres projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../index.html#projet-scoring">Scoring crédit (BUT3)</a></li>
+                            <li><a href="../index.html#projet-ligue1">Ligue 1 ivoirienne (BUT3)</a></li>
+                            <li><a href="../html/but1.html">Starlink</a></li>
+                            <li><a href="../html/stage.html">Stage Power BI</a></li>
+                            <li><a href="../html/diabete.html">Prédiction du diabète</a></li>
+                            <li><a href="../html/breakingbad.html">Datawarehouse Breaking Bad</a></li>
+                            <li><a href="../html/miel.html">Sensométrie des miels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-container">
+            <div class="header-text">
+                <p class="eyebrow">SAE 3.EMS.5 — BUT SD 2ème année</p>
+
+                <h1 class="hero-title">Collecte automatisée de données par un IoT : <span class="text-accent">Station Météo</span></h1>
+
+                <p class="tagline">
+                    Conception d'une chaîne IoT complète — capteurs environnementaux, passerelle mobile Bluetooth
+                    et double stockage cloud — réalisée en binôme avec Ayi Amavigan, sous l'encadrement de M. Di-Scala Pascal.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projet-meteo">Voir le projet</a>
+                    <a class="btn btn-secondary" href="../html/cv.html">Consulter mon CV</a>
+                </div>
+            </div>
+
+            <div class="header-image">
+                <img src="../image/personne-deprimee-fond-blanc-illustration-vectorielle-dessin-au-trait_969863-1165.avif"
+                     alt="Portrait de l'étudiant en Sciences des Données">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="project-card" id="projet-meteo">
+
+            <div class="project-header">
+                <span class="project-badge">SAE 3.EMS.5 — 2025-2026</span>
+                <h2>Vue d'ensemble du projet</h2>
+            </div>
+
+            <!-- OBJECTIF -->
+            <section class="project-row" id="objectif">
+                <div class="project-image">
+                    <img src="../image/data-analyst.jpg" alt="Illustration d'un système de collecte de données">
+                </div>
+
+                <div class="project-content">
+                    <h3>Objectif du projet</h3>
+                    <p>
+                        L'objectif de cette SAE était de concevoir une chaîne complète d'acquisition de données
+                        environnementales — température, humidité, pression atmosphérique et luminosité — capable
+                        de mesurer, transmettre et archiver ces informations sans intervention humaine directe.
+                    </p>
+                    <p>
+                        Contrainte du cahier des charges : la carte Arduino ne devait pas se connecter directement
+                        en Wi-Fi, mais transmettre ses données via une liaison <strong>Bluetooth</strong> vers une
+                        passerelle mobile Android, qui relaie ensuite les mesures vers le cloud.
+                    </p>
+                    <ul class="tag-list">
+                        <li>Arduino / C++</li>
+                        <li>Bluetooth HC-05</li>
+                        <li>MIT App Inventor</li>
+                        <li>PHP / MySQL</li>
+                        <li>Google Sheets</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- MATERIEL -->
+            <section class="project-row reverse" id="materiel">
+                <div class="project-image">
+                    <img src="../image/code1.png" alt="Extrait de code de traitement de données">
+                </div>
+
+                <div class="project-content">
+                    <h3>Matériel &amp; programme Arduino</h3>
+                    <p>
+                        La partie embarquée s'articule autour d'un microcontrôleur Arduino relié à trois capteurs :
+                        un <strong>DHT22</strong> pour l'humidité, un <strong>DPS310</strong> pour la pression
+                        atmosphérique et la température, et un <strong>TSL2561</strong> pour la luminosité. Un module
+                        <strong>HC-05</strong> configuré en esclave assure la liaison Bluetooth vers le smartphone.
+                    </p>
+                    <table class="data-table">
+                        <thead>
+                            <tr><th>Composant</th><th>Interface</th><th>Broches</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>HC-05</td><td>SoftwareSerial</td><td>RX = D11 / TX = D10</td></tr>
+                            <tr><td>DHT22</td><td>Digital (OneWire)</td><td>D2</td></tr>
+                            <tr><td>DPS310</td><td>I2C</td><td>SDA (A4) / SCL (A5)</td></tr>
+                            <tr><td>TSL2561</td><td>I2C</td><td>SDA (A4) / SCL (A5)</td></tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Toutes les 30 secondes, le programme lit les capteurs et concatène les valeurs en une trame
+                        CSV (séparateur point-virgule), envoyée simultanément sur le port série USB (débogage) et
+                        sur le port Bluetooth (application mobile) :
+                    </p>
+                    <div class="code-block">Temperature;Humidite;Pression;Luminosite<br>20.24;38.10;100503.65;323.00</div>
+                </div>
+            </section>
+
+            <!-- APPLICATION MOBILE -->
+            <section class="project-row" id="application-mobile">
+                <div class="project-image">
+                    <img src="../image/analyse1.png" alt="Illustration de traitement de données numériques">
+                </div>
+
+                <div class="project-content">
+                    <h3>Application mobile — MIT App Inventor</h3>
+                    <p>
+                        Une application Android développée avec <strong>MIT App Inventor</strong> agit comme pont
+                        entre l'Arduino et le cloud. Un composant Horloge interroge périodiquement la liaison
+                        Bluetooth ; dès que des données sont disponibles, elles sont lues puis découpées
+                        (« parsing ») à l'aide d'un séparateur pour isoler température, humidité, pression et luminosité.
+                    </p>
+                    <p>
+                        L'application construit ensuite dynamiquement deux requêtes HTTP GET pour envoyer chaque
+                        mesure vers <strong>deux destinations en parallèle</strong> : notre API PHP et un
+                        Google Form détourné en API d'insertion vers Google Sheets. Un navigateur intégré
+                        (WebViewer) permet également de consulter l'historique des mesures sans quitter l'application.
+                    </p>
+                </div>
+            </section>
+
+            <!-- BACKEND -->
+            <section class="project-row reverse" id="backend">
+                <div class="project-image">
+                    <img src="../image/IUT-Logo2-Carcassonne-T1.png" alt="Logo de l'IUT de Carcassonne">
+                </div>
+
+                <div class="project-content">
+                    <h3>Stockage &amp; visualisation web</h3>
+                    <p>
+                        Le serveur (hébergement AwardSpace, Apache + PHP + MySQL) repose sur un modèle relationnel
+                        à deux tables : <code>appareil</code> (référentiel des modules Bluetooth autorisés) et
+                        <code>mesure</code> (historique des relevés), reliées par une clé étrangère sur l'adresse MAC.
+                    </p>
+                    <p>
+                        Le script <code>reciever.php</code> agit comme API d'insertion — connexion sécurisée via
+                        PDO et requêtes préparées pour prévenir les injections SQL — tandis que
+                        <code>index.php</code> affiche l'historique des mesures, trié par date décroissante,
+                        sur <a href="http://saeiotabouhenoc.atwebpages.com" target="_blank" rel="noopener noreferrer">saeiotabouhenoc.atwebpages.com</a>.
+                        En parallèle, une feuille Google Sheets reçoit les mêmes données, assurant une redondance
+                        de sauvegarde indépendante de notre infrastructure.
+                    </p>
+                    <div class="stat-grid">
+                        <div class="stat-tile">
+                            <span class="stat-value">30 s</span>
+                            <span class="stat-label">Fréquence de mesure</span>
+                        </div>
+                        <div class="stat-tile">
+                            <span class="stat-value">4</span>
+                            <span class="stat-label">Grandeurs physiques suivies</span>
+                        </div>
+                        <div class="stat-tile">
+                            <span class="stat-value">2</span>
+                            <span class="stat-label">Cibles de stockage (SQL + Sheets)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONCLUSION -->
+            <section class="project-row conclusion" id="conclusion">
+                <div class="project-content">
+                    <h3>Conclusion</h3>
+                    <p>
+                        Ce projet nous a permis de mettre en œuvre une chaîne IoT complète, de l'électronique
+                        embarquée (câblage, C++ Arduino) jusqu'au développement web Full Stack (PHP/MySQL),
+                        en passant par la programmation par blocs d'une application mobile. Il illustre notre
+                        capacité à faire communiquer des systèmes hétérogènes — capteurs, Bluetooth, HTTP,
+                        base de données relationnelle — au sein d'une seule chaîne de traitement fiable.
+                    </p>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>BUT Sciences des Données</h3>
+                <p>Formation spécialisée en analyse et exploitation des données.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Projet</h3>
+                <p>SAE 3.EMS.5 — Collecte automatisée de données par un IoT, réalisée avec Ayi Amavigan — IUT de Carcassonne.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <p><a href="../index.html">Retour à l'accueil</a></p>
+                <p><a href="../html/cv.html">Consulter mon CV</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

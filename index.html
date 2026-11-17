@@ -3,151 +3,1088 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio d'un étudiant en Sciences des Données spécialisé en modélisation statistique">
-    <title>Portfolio | Étudiant en Sciences des Données</title>
+    <meta name="description" content="Portfolio d'Aboubakar Coulibaly, étudiant en Sciences des Données spécialisé en modélisation statistique et Business Intelligence">
+    <title>Portfolio | Aboubakar Coulibaly</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header role="banner">
-        <div class="header-container">
-            <div class="header-text">
-                <h1>Portfolio</h1>
-                <p class="tagline">Étudiant en Sciences des Données, spécialisé en modélisation statistique</p>
-            </div>
-            <div class="header-image">
-                <img src="./image/personne-deprimee-fond-blanc-illustration-vectorielle-dessin-au-trait_969863-1165.avif" alt="Portrait de l'étudiant en Sciences des Données" width="200" height="200">
+
+<header role="banner">
+    <div class="header-container">
+        <div class="header-text">
+            <span class="eyebrow">Étudiant en Sciences des Données</span>
+            <h1>Aboubakar <span class="text-accent">Coulibaly</span></h1>
+            <p class="tagline">
+                Je donne du sens aux données pour éclairer la décision : collecte, modélisation
+                statistique, visualisation et Business Intelligence.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+                <a class="btn btn-secondary" href="./html/cv.html">Consulter mon CV</a>
             </div>
         </div>
+        <div class="header-image">
+            <img src="./image/personne-deprimee-fond-blanc-illustration-vectorielle-dessin-au-trait_969863-1165.avif"
+                 alt="Portrait de l'étudiant en Sciences des Données"
+                 width="200" height="200">
+        </div>
+    </div>
 
-        <nav aria-label="Navigation principale" role="navigation">
-            <ul class="menu">
-                <li><a href="./html/index.html" aria-current="page">Accueil</a></li>
-                <li class="submenu">
-                    <a href="./html/a-propos.html">À propos de moi</a>
-                    <ul class="dropdown">
-                        <li><a href="./html/centres-interet.html">Centres d'intérêt</a></li>
-                        <li><a href="./html/cv.html">Mon CV</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
-                    <a href="./html/projets.html">Projets</a>
-                    <ul class="dropdown">
-                        <li><a href="./html/but1.html">BUT SD 1ère année</a></li>
-                        <li><a href="./html/but2.html">BUT SD 2ème année</a></li>
-                    </ul>
-                </li>
-                <li><a href="./html/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav aria-label="Navigation principale">
+        <ul class="menu">
+            <li><a href="#accueil">Accueil</a></li>
 
-    <main role="main">
-        <section class="formation" aria-labelledby="formation-title">
-            <div class="section-container">
-                <h2 id="formation-title">Ma formation</h2>
-                <div class="content">
+            <li class="submenu">
+                <a href="#apropos">À propos</a>
+                <ul class="dropdown">
+                    <li><a href="./html/interet.html">Centres d'intérêt</a></li>
+                    <li><a href="./html/cv.html">Mon CV</a></li>
+                </ul>
+            </li>
+
+            <li class="submenu">
+                <a href="#projets">Projets</a>
+                <ul class="dropdown">
+                    <li class="dropdown-label">Projets récents (BUT3)</li>
+                    <li><a href="#projet-scoring">Scoring crédit (PD)</a></li>
+                    <li><a href="#projet-ligue1">Ligue 1 ivoirienne</a></li>
+                    <li><a href="#projet-etl">Mini-ETL Stack Exchange</a></li>
+                    <li><a href="#projet-carte">Carte interactive Manaus</a></li>
+                    <li class="dropdown-label">Projets BUT1 / BUT2</li>
+                    <li><a href="./html/but1.html">Projet Starlink (BUT1)</a></li>
+                    <li><a href="./html/but2.html">Projet Station Météo (BUT2)</a></li>
+                    <li><a href="./html/stage.html">Stage Power BI (BUT2)</a></li>
+                    <li><a href="./html/diabete.html">Prédiction du diabète (BUT2)</a></li>
+                    <li><a href="./html/breakingbad.html">Datawarehouse Breaking Bad (BUT2)</a></li>
+                    <li><a href="./html/miel.html">Sensométrie des miels (BUT2)</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="accueil">
+
+    <!-- A PROPOS -->
+    <section class="apropos" id="apropos">
+        <div class="section-container">
+            <span class="section-kicker">À propos</span>
+            <h2>Qui suis-je ?</h2>
+
+            <div class="apropos-grid">
+                <div class="card apropos-main">
+                    <h3>Mon parcours vers la Data Science</h3>
                     <p>
-                        Actuellement étudiant en <strong>BUT Sciences des Données</strong> à l'IUT de Carcassonne, j'acquiers des compétences solides en analyse de données et en prise de décision éclairée. Cette formation me permet de développer mes compétences en programmation, modélisation statistique, gestion de projets et visualisation de données.
+                        Mon intérêt pour les données est né au fil de mes premiers projets d'analyse en
+                        <strong>BUT Sciences des Données</strong> à l'IUT de Carcassonne. Entre statistiques,
+                        développement et visualisation, j'ai vite compris que je voulais construire des outils
+                        qui transforment des données brutes en décisions concrètes.
+                    </p>
+                    <details class="read-more">
+                    <summary>Lire la suite de mon parcours</summary>
+                    <p>
+                        Cette passion pour l'intelligence artificielle remonte en réalité plus loin : dès la
+                        classe de seconde, je me demandais déjà comment les machines pouvaient « apprendre » à
+                        reconnaître des schémas, à prédire, à décider. Cette curiosité m'a naturellement guidé
+                        vers une Première puis une Terminale spécialité Mathématiques Expertes, avant de
+                        m'orienter vers une <strong>Licence 1 Mathématiques</strong> à l'Université Félix
+                        Houphouët-Boigny (Abidjan, Côte d'Ivoire) — le socle qui m'a donné les fondamentaux
+                        mathématiques indispensables à la data science.
                     </p>
                     <p>
-                        Les laboratoires informatiques de l'IUT sont équipés des technologies et logiciels d'analyse de données les plus utilisés en entreprise (Python, R, SQL, Power BI, etc.), ce qui nous permet d'acquérir une expérience pratique avec des outils professionnels.
+                        C'est durant cette licence que ma vocation s'est précisée, en particulier grâce à une
+                        rencontre déterminante : un aîné alors en Master 2 Machine Learning, qui me parlait
+                        régulièrement de ses projets et m'expliquait comment on parvient à construire des
+                        modèles capables de prédire, d'estimer, d'anticiper. Ses explications ont été le
+                        déclic qui a transformé une curiosité diffuse en un projet professionnel clair :
+                        devenir <strong>Data Scientist</strong> ou <strong>Machine Learning Engineer</strong>.
                     </p>
-                    <p class="highlight">
-                        Je suis convaincu que ces compétences techniques et méthodologiques seront déterminantes pour ma future carrière dans le domaine de la data science.
+                    <p>
+                        Après cette licence, je suis arrivé à l'IUT de Carcassonne, dans la filière Sciences
+                        des Données. Dès la 2<sup>e</sup> année, je me suis spécialisé dans le parcours
+                        <strong>Exploration et Modélisation Statistique</strong>, et c'est à ce moment que j'ai
+                        vraiment commencé à comprendre les différents types de modèles de machine learning,
+                        leur fonctionnement, et comment les mettre en production. C'est également dès la
+                        2<sup>e</sup> année que j'ai commencé à candidater, et que j'ai réalisé mon stage chez
+                        GROUPE ZOH. Aujourd'hui, mon stage terminé, j'entre en 3<sup>e</sup> année (BUT3) avec
+                        une vision plus claire des perspectives qu'offre le machine learning.
+                    </p>
+                    </details>
+                    <p>Cette trajectoire s'est concrétisée à travers plusieurs projets complémentaires :</p>
+                    <ul class="check-list">
+                        <li>un système de scoring crédit complet (scorecard + LightGBM) déployé en application Streamlit</li>
+                        <li>une plateforme d'analyse de la Ligue 1 ivoirienne : collecte web, MongoDB, PostgreSQL et modèles de prédiction</li>
+                        <li>une modélisation statistique appliquée à la constellation Starlink</li>
+                        <li>une incursion dans l'électronique embarquée avec une station météo connectée (IoT)</li>
+                        <li>un stage chez GROUPE ZOH, où j'ai découvert la Business Intelligence et les outils décisionnels</li>
+                    </ul>
+                    <p>
+                        Cette diversité d'expériences — entre statistiques, développement et visualisation —
+                        m'a confirmé ce que je cherche vraiment : construire des outils qui transforment des
+                        données brutes en décisions concrètes. Mon approche allie la rigueur méthodologique
+                        nécessaire au traitement des données à la curiosité qui m'a poussé à toucher à l'IoT,
+                        au développement et aux outils décisionnels. Chaque projet est pour moi l'occasion
+                        d'apprendre un nouvel outil au service d'un problème réel. Je vise aujourd'hui un
+                        poste de <strong>Data Scientist</strong> ou <strong>Machine Learning Engineer</strong>.
                     </p>
                 </div>
-            </div>
-        </section>
 
-        <section class="metier" aria-labelledby="metier-title">
-            <div class="section-container">
-                <h2 id="metier-title">Mon projet professionnel</h2>
-                <div class="content">
-                    <p>
-                        Mon objectif est de devenir <strong>ingénieur data scientist</strong> ou <strong>ingénieur en machine learning</strong>. Je projette d'intégrer une école d'ingénieurs pour me spécialiser davantage et développer des compétences avancées en modélisation prédictive et en intelligence artificielle.
-                    </p>
-                    <div class="objectives">
-                        <h3>Mes ambitions :</h3>
-                        <ul>
-                            <li>Résoudre des problèmes complexes grâce à l'analyse de données</li>
-                            <li>Travailler en équipes pluridisciplinaires</li>
-                            <li>Contribuer à des projets innovants ayant un impact positif</li>
-                            <li>Développer des solutions data-driven pour les entreprises</li>
+                <div class="apropos-side">
+                    <div class="card side-card">
+                        <h3><span class="side-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                        </span>Profil professionnel</h3>
+                        <ul class="icon-list">
+                            <li>
+                                <span class="side-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                                </span>
+                                Étudiant en 3<sup>e</sup> année de BUT Sciences des Données, parcours Exploration et Modélisation Statistique
+                            </li>
+                            <li>
+                                <span class="side-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="0"/><path d="M3 9h18M8 3v3M16 3v3"/></svg>
+                                </span>
+                                IUT de Carcassonne — Université Perpignan Via Domitia
+                            </li>
+                            <li>
+                                <span class="side-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M8 13l-2 8 6-3 6 3-2-8"/></svg>
+                                </span>
+                                Statistiques, développement, IoT et Business Intelligence
+                            </li>
                         </ul>
                     </div>
+
+                    <div class="card side-card">
+                        <h3>Repères</h3>
+                        <ul class="dot-list">
+                            <li>Terminale spécialité Mathématiques Expertes</li>
+                            <li>Licence 1 Mathématiques — Abidjan, Côte d'Ivoire</li>
+                            <li>BUT Sciences des Données — parcours Exploration et Modélisation Statistique</li>
+                            <li>Stage Business Intelligence chez GROUPE ZOH</li>
+                        </ul>
+                    </div>
+
+                    <div class="card enigma-card">
+                        <h3>
+                            <span class="side-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h4V5.5a1.5 1.5 0 1 1 3 0V7h3V4h2v3h4v4h-3.5a1.5 1.5 0 1 0 0 3H20v4h-4v-3.5a1.5 1.5 0 1 0-3 0V20H9v-4H5.5a1.5 1.5 0 1 1 0-3H9v-3H4V7z"/></svg>
+                            </span>
+                            Énigme : Qui suis-je ?
+                        </h3>
+                        <p>
+                            Né(e) d'une question posée dès la seconde — comment une machine apprend-elle ? —
+                            j'ai forgé mon raisonnement à travers deux années de <strong>Mathématiques Expertes</strong>,
+                            puis posé mes bases en <strong>Licence 1 Mathématiques</strong> à l'Université Félix
+                            Houphouët-Boigny, à Abidjan.
+                        </p>
+                        <p>
+                            Un aîné en Master 2 a allumé la mèche en me racontant comment une machine apprend à
+                            deviner l'avenir. Puis je suis arrivé à Carcassonne, où j'ai appris à transformer
+                            les données brutes en sens.
+                        </p>
+                        <p>
+                            Je ne suis pas seulement celui qui construit les tuyaux par lesquels coulent les
+                            données — je suis celui qui cherche à lire, dans l'eau qui coule, <strong>le motif
+                            de demain</strong>.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="contact" aria-labelledby="contact-title">
-            <div class="section-container">
-                <h2 id="contact-title">Contactez-moi</h2>
-                <form id="contact-form" action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Nom et prénom :</label>
-                        <input type="text" id="name" name="name" required aria-required="true" placeholder="Votre nom complet">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Adresse email :</label>
-                        <input type="email" id="email" name="email" required aria-required="true" placeholder="votre@email.com">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Sujet :</label>
-                        <input type="text" id="subject" name="subject" placeholder="Objet de votre message">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message :</label>
-                        <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Votre message..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn-submit">Envoyer le message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer role="contentinfo">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>BUT Sciences des Données</h3>
-                <img src="./image/Logo.png" alt="Logo de l'IUT de Carcassonne" width="100" height="100">
-                <p>Formation en Sciences des Données et Data Science</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>À propos du BUT</h3>
-                <p>
-                    Le Bachelor Universitaire de Technologie en Sciences des Données forme des professionnels capables de collecter, traiter, analyser et interpréter des données massives pour en extraire de la valeur et supporter la prise de décision.
-                </p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Localisation</h3>
-                <address>
-                    IUT de Carcassonne<br>
-                    1 Rue Pierre-Paul Riquet<br>
-                    11000 Carcassonne, France<br>
-                    <a href="mailto:contact@iut-carcassonne.fr">contact@iut-carcassonne.fr</a>
-                </address>
-            </div>
-
-            <div class="footer-section">
-                <h3>Réseaux sociaux</h3>
-                <div class="social-links">
-                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="#" aria-label="GitHub">GitHub</a>
-                    <a href="#" aria-label="Twitter">Twitter</a>
-                </div>
-                <p class="copyright">&copy; 2024 Portfolio - Tous droits réservés</p>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="./js/script.js" defer></script>
+    <!-- PROJETS -->
+    <section class="projets" id="projets">
+        <div class="section-container">
+            <span class="section-kicker">Réalisations</span>
+            <h2>Mes projets</h2>
+            <p class="section-intro">
+                Des projets menés de la collecte des données jusqu'au modèle en production.
+                Les plus récents sont en premier, chacun avec son code sur GitHub.
+            </p>
+
+            <!-- PROJETS RECENTS (GitHub) -->
+            <div class="projets-subhead">
+                <h3>Projets récents <span class="projets-subhead-tag">BUT3 · 2026</span></h3>
+                <a class="github-all" href="https://github.com/coulibaly-abou?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
+                    Tous mes dépôts
+                </a>
+            </div>
+
+            <div class="recent-grid">
+
+                <article class="card recent-card recent-card--featured" id="projet-scoring">
+                    <div class="recent-meta">
+                        <span class="recent-date">Novembre 2026</span>
+                        <span class="recent-badge">Machine Learning</span>
+                    </div>
+                    <h3>Scoring crédit — Probabilité de défaut à l'octroi</h3>
+                    <p>
+                        Système de scoring complet sur les données Home Credit (307 507 demandes) :
+                        scorecard interprétable (champion) et LightGBM (challenger), PD calibrée,
+                        cut-off optimisé sur le profit, API, monitoring et documentation alignée
+                        sur l'EBA, le RGPD et l'AI Act.
+                    </p>
+                    <ul class="recent-kpis">
+                        <li><strong>0,505</strong><span>Gini du champion</span></li>
+                        <li><strong>×2,8</strong><span>profit vs modèle legacy</span></li>
+                        <li><strong>0,004</strong><span>PSI (score stable)</span></li>
+                    </ul>
+                    <ul class="tech-tags">
+                        <li>Python</li><li>LightGBM</li><li>WOE / IV</li><li>Streamlit</li><li>Docker</li>
+                    </ul>
+                    <div class="recent-actions">
+                        <a class="btn-gh" href="https://github.com/coulibaly-abou/scoring-credit" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                        <a class="btn-demo" href="https://scoring-credit-couly.streamlit.app/" target="_blank" rel="noopener noreferrer">Application en ligne <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="card recent-card recent-card--featured" id="projet-ligue1">
+                    <div class="recent-meta">
+                        <span class="recent-date">Octobre 2026</span>
+                        <span class="recent-badge">Data Engineering &amp; ML</span>
+                    </div>
+                    <h3>Plateforme d'analyse de la Ligue 1 ivoirienne</h3>
+                    <p>
+                        Pipeline de données complet sur 10 saisons (2016 → 2026) : collecte web et API,
+                        zone brute MongoDB, zone analytique PostgreSQL, réseau des transferts,
+                        six modèles de prédiction (dont un réseau de neurones PyTorch) et tableau de
+                        bord Streamlit.
+                    </p>
+                    <ul class="recent-kpis">
+                        <li><strong>1 934</strong><span>matchs collectés</span></li>
+                        <li><strong>43,7 %</strong><span>précision (Elo retenu)</span></li>
+                        <li><strong>563</strong><span>transferts suivis</span></li>
+                    </ul>
+                    <ul class="tech-tags">
+                        <li>Python</li><li>MongoDB</li><li>PostgreSQL</li><li>PyTorch</li><li>Streamlit</li>
+                    </ul>
+                    <div class="recent-actions">
+                        <a class="btn-gh" href="https://github.com/coulibaly-abou/ligue1-ci-data" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card recent-card" id="projet-etl">
+                    <div class="recent-meta">
+                        <span class="recent-date">Novembre 2026</span>
+                        <span class="recent-badge">SAÉ 5.02 · Trinôme</span>
+                    </div>
+                    <h3>Mini-ETL Stack Exchange : XML, PostgreSQL et MongoDB</h3>
+                    <p>
+                        Migration de 20 515 enregistrements Stack Exchange vers un modèle relationnel
+                        (8 tables) et un modèle documentaire (3 collections), via un format pivot
+                        JSON Lines validé par JSON Schema. 27 problèmes de migration traduits en
+                        11 règles de transformation.
+                    </p>
+                    <ul class="tech-tags">
+                        <li>Python</li><li>PostgreSQL</li><li>MongoDB</li><li>JSON Schema</li>
+                    </ul>
+                    <div class="recent-actions">
+                        <a class="btn-gh" href="https://github.com/coulibaly-abou/sae502-etl-stackexchange." target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card recent-card" id="projet-carte">
+                    <div class="recent-meta">
+                        <span class="recent-date">Septembre 2026</span>
+                        <span class="recent-badge">Cartographie</span>
+                    </div>
+                    <h3>Carte interactive — Points de collecte de Manaus</h3>
+                    <p>
+                        Carte interactive des points de collecte et de la station météo de Manaus
+                        (Brésil), réalisée avec Folium en Python et publiée sur GitHub Pages
+                        (R5.02 / SAE5.EMS.01).
+                    </p>
+                    <ul class="tech-tags">
+                        <li>Python</li><li>Folium</li><li>GitHub Pages</li>
+                    </ul>
+                    <div class="recent-actions">
+                        <a class="btn-gh" href="https://github.com/coulibaly-abou/EasyMapWebsite" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                        <a class="btn-demo" href="https://coulibaly-abou.github.io/EasyMapWebsite/ManausMap.html" target="_blank" rel="noopener noreferrer">Voir la carte <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- AUTRES DEPOTS -->
+            <div class="other-repos">
+                <h4>Autres dépôts</h4>
+                <ul>
+                    <li>
+                        <a href="https://github.com/coulibaly-abou/sae_serie-chronologie" target="_blank" rel="noopener noreferrer">Séries chronologiques — décès par maladies pulmonaires (R)</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/coulibaly-abou/sae_sondage" target="_blank" rel="noopener noreferrer">Techniques de sondage (SAÉ)</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/coulibaly-abou/Creation_jouer_mon_champion" target="_blank" rel="noopener noreferrer">Jeu « Mon champion » en Python</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- PROJETS ACADEMIQUES BUT1 / BUT2 -->
+            <div class="projets-subhead">
+                <h3>Projets académiques <span class="projets-subhead-tag">BUT1 · BUT2</span></h3>
+            </div>
+
+            <div class="projets-grid">
+
+                <article class="card projet-card">
+                    <div class="projet-top">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M19 5l-2.8 2.8M7.8 16.2 5 19"/></svg>
+                        </span>
+                        <h3>Starlink — Étude statistique d'une constellation</h3>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--doc" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg>
+                            </span>
+                            <h4>Contexte</h4>
+                        </div>
+                        <p>
+                            Analyser le déploiement de plus de 7 000 satellites Starlink à partir de données
+                            brutes hétérogènes (Celestrak, N2YO), sans outil existant pour les croiser et les
+                            fiabiliser.
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--trend" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+                            </span>
+                            <h4>Enjeux</h4>
+                        </div>
+                        <ul class="enjeux-list">
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Fiabiliser un jeu de données de plus de 7 000 satellites avant toute analyse</li>
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Situer Starlink parmi les autres objets en orbite via une cartographie du ciel</li>
+                        </ul>
+                        <p class="more-enjeux">
+                            <span class="block-icon block-icon--more" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/></svg>
+                            </span>
+                            +1 autre enjeu — restituer les résultats via une application R Shiny interactive
+                        </p>
+                    </div>
+
+                    <a class="projet-cta" href="./html/but1.html">Voir les détails <span aria-hidden="true">›</span></a>
+                </article>
+
+                <article class="card projet-card">
+                    <div class="projet-top">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M17 18a4 4 0 0 0 0-8 5 5 0 0 0-9.6-1.5A4 4 0 0 0 6 18h11z"/></svg>
+                        </span>
+                        <h3>Station météo connectée (IoT)</h3>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--doc" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg>
+                            </span>
+                            <h4>Contexte</h4>
+                        </div>
+                        <p>
+                            SAE réalisée en binôme : concevoir une chaîne de collecte météo sans connexion Wi-Fi
+                            directe (température, humidité, pression, luminosité), remontée via Bluetooth vers
+                            une passerelle mobile.
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--trend" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+                            </span>
+                            <h4>Enjeux</h4>
+                        </div>
+                        <ul class="enjeux-list">
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Garantir la continuité des mesures grâce à une double sauvegarde (MySQL + Google Sheets)</li>
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Sécuriser l'insertion des données contre les injections SQL (requêtes préparées)</li>
+                        </ul>
+                        <p class="more-enjeux">
+                            <span class="block-icon block-icon--more" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/></svg>
+                            </span>
+                            +1 autre enjeu — permettre une consultation en temps réel depuis l'application mobile
+                        </p>
+                    </div>
+
+                    <a class="projet-cta" href="./html/but2.html">Voir les détails <span aria-hidden="true">›</span></a>
+                </article>
+
+                <article class="card projet-card">
+                    <div class="projet-top">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+                        </span>
+                        <h3>Solution décisionnelle Power BI (stage)</h3>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--doc" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg>
+                            </span>
+                            <h4>Contexte</h4>
+                        </div>
+                        <p>
+                            Centraliser les données de 180 chantiers de GROUPE ZOH (BTP), jusque-là dispersées
+                            dans des fichiers de suivi difficiles à croiser rapidement pour la direction.
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--trend" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+                            </span>
+                            <h4>Enjeux économiques</h4>
+                        </div>
+                        <ul class="enjeux-list">
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Identifier 62 chantiers critiques et un taux de retard de 55 % pour prioriser les actions</li>
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Donner une vision claire d'un budget total de 14 milliards FCFA</li>
+                        </ul>
+                        <p class="more-enjeux">
+                            <span class="block-icon block-icon--more" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/></svg>
+                            </span>
+                            +1 autre enjeu — réduire le temps consacré à la production des rapports de suivi
+                        </p>
+                    </div>
+
+                    <a class="projet-cta" href="./html/stage.html">Voir les détails <span aria-hidden="true">›</span></a>
+                </article>
+
+                <article class="card projet-card">
+                    <div class="projet-top">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg>
+                        </span>
+                        <h3>Prédiction du diabète de type 2</h3>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--doc" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg>
+                            </span>
+                            <h4>Contexte</h4>
+                        </div>
+                        <p>
+                            Projet réalisé avec Taslima Diallo (SAE4-EMS-01) : à partir de la base Pima Indians
+                            Diabetes (NIDDK), identifier les facteurs biomédicaux associés au diabète de type 2
+                            et construire des modèles pour l'expliquer et le prédire.
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--trend" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+                            </span>
+                            <h4>Enjeux</h4>
+                        </div>
+                        <ul class="enjeux-list">
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Comparer régression linéaire, arbre de décision et régression multiple pour cibler les meilleurs prédicteurs (glucose, IMC, âge)</li>
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Construire un modèle de classification atteignant 72,9 % d'accuracy pour détecter le statut diabétique</li>
+                        </ul>
+                        <p class="more-enjeux">
+                            <span class="block-icon block-icon--more" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/></svg>
+                            </span>
+                            +1 autre enjeu — traiter 48,7 % de valeurs manquantes sur une variable dérivée avant modélisation
+                        </p>
+                    </div>
+
+                    <a class="projet-cta" href="./html/diabete.html">Voir les détails <span aria-hidden="true">›</span></a>
+                </article>
+
+                <article class="card projet-card">
+                    <div class="projet-top">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+                        </span>
+                        <h3>Datawarehouse — Base décisionnelle Breaking Bad</h3>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--doc" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg>
+                            </span>
+                            <h4>Contexte</h4>
+                        </div>
+                        <p>
+                            Projet individuel (SAÉ 3.02) : concevoir une base de données décisionnelle sur la
+                            série Breaking Bad, avec scraping Python, ETL sous FME et modélisation en étoile
+                            et en flocon.
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--trend" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+                            </span>
+                            <h4>Enjeux</h4>
+                        </div>
+                        <ul class="enjeux-list">
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Structurer une quinzaine d'entités (épisodes, personnages, récompenses, audiences) en un modèle exploitable pour l'analyse</li>
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Automatiser la collecte par web scraping (BeautifulSoup) puis le nettoyage et la traduction des données</li>
+                        </ul>
+                        <p class="more-enjeux">
+                            <span class="block-icon block-icon--more" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/></svg>
+                            </span>
+                            +1 autre enjeu — charger les données dans PostgreSQL via des flux ETL FME automatisés
+                        </p>
+                    </div>
+
+                    <a class="projet-cta" href="./html/breakingbad.html">Voir les détails <span aria-hidden="true">›</span></a>
+                </article>
+
+                <article class="card projet-card">
+                    <div class="projet-top">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2c3 4 5 7 5 10a5 5 0 1 1-10 0c0-3 2-6 5-10z"/></svg>
+                        </span>
+                        <h3>Sensométrie — Analyse multivariée de 4 miels</h3>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--doc" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg>
+                            </span>
+                            <h4>Contexte</h4>
+                        </div>
+                        <p>
+                            Étude réalisée avec Ayi Amavigan et Ada Gadji (SAE 4.02) : évaluation sensorielle
+                            de 4 miels par un panel de 143 dégustateurs, puis analyse multivariée (ACP, AFM,
+                            AFCM, LDA, CAH) pour cartographier les profils organoleptiques.
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-block-head">
+                            <span class="block-icon block-icon--trend" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+                            </span>
+                            <h4>Enjeux</h4>
+                        </div>
+                        <ul class="enjeux-list">
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Identifier les attributs les plus discriminants (couleur, amertume) parmi 19 descripteurs sensoriels</li>
+                            <li><span class="enjeu-dot" aria-hidden="true"></span>Construire un modèle prédictif (LDA) capable de reclasser les miels avec 58,4 % de précision</li>
+                        </ul>
+                        <p class="more-enjeux">
+                            <span class="block-icon block-icon--more" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/></svg>
+                            </span>
+                            +1 autre enjeu — formuler des recommandations marketing différenciées pour chaque miel testé
+                        </p>
+                    </div>
+
+                    <a class="projet-cta" href="./html/miel.html">Voir les détails <span aria-hidden="true">›</span></a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+        <div class="section-container">
+            <span class="section-kicker">Parcours professionnel</span>
+            <h2>Expérience</h2>
+            <p class="section-intro">
+                Une première expérience de terrain, au croisement de l'analyse de données et du pilotage
+                d'activité en entreprise.
+            </p>
+
+            <div class="experience-grid">
+                <article class="card experience-card">
+                    <div class="experience-meta">
+                        <span>Avril – Juin 2026</span>
+                        <span>·</span>
+                        <span>Divo, Côte d'Ivoire</span>
+                    </div>
+                    <h3>Data Analyst — Solution décisionnelle Power BI</h3>
+                    <p>
+                        Stage chez <strong>GROUPE ZOH</strong> (BTP, électricité bâtiment) : nettoyage des données
+                        avec Power Query, modélisation en étoile, écriture de mesures DAX et conception de
+                        cinq tableaux de bord interactifs pour le pilotage de 180 chantiers.
+                    </p>
+                    <a class="card-link" href="./html/stage.html">Voir le rapport complet <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section class="competences" id="competences">
+        <div class="section-container">
+            <span class="section-kicker">Boîte à outils</span>
+            <h2>Compétences</h2>
+
+            <div class="competences-grid">
+
+                <div class="card competence-group competence-group--blue">
+                    <div class="competence-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg>
+                        </span>
+                        <div>
+                            <h3>Langages de programmation</h3>
+                            <span class="competence-sub">Cœur technique</span>
+                        </div>
+                    </div>
+                    <ul class="skills-list skills-list--pills">
+                        <li><span class="skill-dot" aria-hidden="true"></span>Python</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>R</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>SAS</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>C++</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>JavaScript</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>HTML / CSS</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>PHP</li>
+                    </ul>
+                </div>
+
+                <div class="card competence-group competence-group--indigo">
+                    <div class="competence-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                        </span>
+                        <div>
+                            <h3>Outils d'analyse &amp; reporting</h3>
+                            <span class="competence-sub">Restitution</span>
+                        </div>
+                    </div>
+                    <ul class="skills-list skills-list--pills">
+                        <li><span class="skill-dot" aria-hidden="true"></span>SQL</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Power BI Desktop</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Tableau</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Microsoft Access</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Excel (tableaux croisés dynamiques)</li>
+                    </ul>
+                </div>
+
+                <div class="card competence-group competence-group--purple">
+                    <div class="competence-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+                        </span>
+                        <div>
+                            <h3>Data Science &amp; Statistiques</h3>
+                            <span class="competence-sub">Modélisation</span>
+                        </div>
+                    </div>
+                    <ul class="skills-list skills-list--pills">
+                        <li><span class="skill-dot" aria-hidden="true"></span>Modélisation prédictive (régression, ANOVA)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Classification (arbre de décision, LDA)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Scoring crédit (scorecard, LightGBM)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Réseaux de neurones (PyTorch)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Analyse multivariée (ACP, AFM, CAH)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Visualisation de données</li>
+                    </ul>
+                </div>
+
+                <div class="card competence-group competence-group--red">
+                    <div class="competence-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+                        </span>
+                        <div>
+                            <h3>Merise &amp; Bases de données</h3>
+                            <span class="competence-sub">Bases de données</span>
+                        </div>
+                    </div>
+                    <ul class="skills-list skills-list--pills">
+                        <li><span class="skill-dot" aria-hidden="true"></span>MySQL &amp; PostgreSQL</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>MongoDB (NoSQL)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Neo4j (base graphe)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Modèle Conceptuel de Données (MCD)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Modèle Logique de Données (MLD)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Modélisation en étoile &amp; en flocon</li>
+                    </ul>
+                </div>
+
+                <div class="card competence-group competence-group--pink">
+                    <div class="competence-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M9 17H7a5 5 0 0 1 0-10h2M15 7h2a5 5 0 0 1 0 10h-2M8 12h8"/></svg>
+                        </span>
+                        <div>
+                            <h3>Data Engineering &amp; ETL</h3>
+                            <span class="competence-sub">Pipelines de données</span>
+                        </div>
+                    </div>
+                    <ul class="skills-list skills-list--pills">
+                        <li><span class="skill-dot" aria-hidden="true"></span>Web scraping (Python, BeautifulSoup)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>ETL avec FME</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Nettoyage &amp; transformation de données</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Intégration multi-sources</li>
+                    </ul>
+                </div>
+
+                <div class="card competence-group competence-group--teal">
+                    <div class="competence-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="7" width="10" height="10"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg>
+                        </span>
+                        <div>
+                            <h3>IoT &amp; Systèmes embarqués</h3>
+                            <span class="competence-sub">Électronique</span>
+                        </div>
+                    </div>
+                    <ul class="skills-list skills-list--pills">
+                        <li><span class="skill-dot" aria-hidden="true"></span>Arduino / C++</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Capteurs &amp; Bluetooth</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>MIT App Inventor</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>API PHP / MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="card competence-group competence-group--green competence-group--wide">
+                    <div class="competence-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.9 2.9M16.9 16.9l2.9 2.9M1 12h4M19 12h4M4.2 19.8l2.9-2.9M16.9 7.1l2.9-2.9"/></svg>
+                        </span>
+                        <div>
+                            <h3>Outils &amp; Méthodologies</h3>
+                            <span class="competence-sub">Productivité</span>
+                        </div>
+                    </div>
+                    <ul class="skills-list skills-list--pills">
+                        <li><span class="skill-dot" aria-hidden="true"></span>Git &amp; GitHub</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>R Shiny &amp; Streamlit (dataviz interactive)</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Docker</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Power Query &amp; DAX</li>
+                        <li><span class="skill-dot" aria-hidden="true"></span>Travail en équipe (SAE en binôme/trinôme)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section class="formation" id="formation">
+        <div class="section-container">
+            <span class="section-kicker">Parcours</span>
+            <h2>Ma formation</h2>
+
+            <div class="formation-timeline formation-timeline--grid">
+
+                <article class="card credential-card">
+                    <div class="credential-head">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+                        </span>
+                        <div>
+                            <h3>BUT Sciences des Données</h3>
+                            <a class="credential-org" href="./html/cv.html">Université Perpignan Via Domitia — Campus de Carcassonne</a>
+                            <span class="credential-date">2024 – aujourd'hui · 3<sup>e</sup> année</span>
+                        </div>
+                        <a class="credential-external" href="./html/cv.html" aria-label="Voir mon CV" title="Voir mon CV">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                    <p>
+                        Formation généraliste en science des données, spécialisée depuis la 2<sup>e</sup> année
+                        dans le parcours <strong>Exploration et Modélisation Statistique</strong> — statistiques,
+                        programmation, bases de données et Business Intelligence.
+                    </p>
+                    <div class="learnings-box">
+                        <span class="credential-icon credential-icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><path d="M2 5c3-1.5 6-1.5 9 0v14c-3-1.5-6-1.5-9 0V5z"/><path d="M22 5c-3-1.5-6-1.5-9 0v14c3-1.5 6-1.5 9 0V5z"/></svg>
+                        </span>
+                        <div>
+                            <h4>Apprentissages clés :</h4>
+                            <p>
+                                Python, R, SQL et Power BI ; modélisation statistique et prédictive ; collecte
+                                et nettoyage de données (scraping, ETL) ; conception de bases de données
+                                relationnelles.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card credential-card">
+                    <div class="credential-head">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+                        </span>
+                        <div>
+                            <h3>Licence 1 — Mathématiques et Informatique</h3>
+                            <a class="credential-org" href="./html/cv.html">Université Félix Houphouët-Boigny — Abidjan, Côte d'Ivoire</a>
+                            <span class="credential-date">2023 – 2024</span>
+                        </div>
+                        <a class="credential-external" href="./html/cv.html" aria-label="Voir mon CV" title="Voir mon CV">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                    <p>
+                        Première année de licence en mathématiques et informatique, avant de partir poursuivre
+                        mes études en France, à l'IUT de Carcassonne, en BUT Sciences des Données.
+                    </p>
+                    <div class="learnings-box">
+                        <span class="credential-icon credential-icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><path d="M2 5c3-1.5 6-1.5 9 0v14c-3-1.5-6-1.5-9 0V5z"/><path d="M22 5c-3-1.5-6-1.5-9 0v14c3-1.5 6-1.5 9 0V5z"/></svg>
+                        </span>
+                        <div>
+                            <h4>Apprentissages clés :</h4>
+                            <p>
+                                Fondamentaux mathématiques (algèbre, analyse) et bases de l'algorithmique et de
+                                la programmation.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card credential-card">
+                    <div class="credential-head">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+                        </span>
+                        <div>
+                            <h3>Baccalauréat Scientifique</h3>
+                            <a class="credential-org" href="./html/cv.html">Lycée Municipal d'Affery — Côte d'Ivoire</a>
+                            <span class="credential-date">2022</span>
+                        </div>
+                        <a class="credential-external" href="./html/cv.html" aria-label="Voir mon CV" title="Voir mon CV">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                    <p>
+                        Baccalauréat série scientifique, avec une spécialité Mathématiques Expertes en
+                        Terminale — le point de départ de mon goût pour le raisonnement logique et
+                        mathématique.
+                    </p>
+                    <div class="learnings-box">
+                        <span class="credential-icon credential-icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><path d="M2 5c3-1.5 6-1.5 9 0v14c-3-1.5-6-1.5-9 0V5z"/><path d="M22 5c-3-1.5-6-1.5-9 0v14c3-1.5 6-1.5 9 0V5z"/></svg>
+                        </span>
+                        <div>
+                            <h4>Apprentissages clés :</h4>
+                            <p>
+                                Spécialité Mathématiques Expertes ; premières bases du raisonnement
+                                scientifique et logique.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MES FORCES -->
+    <section class="forces" id="forces">
+        <div class="section-container">
+            <span class="section-kicker">Ma façon de travailler</span>
+            <h2>Mes forces</h2>
+
+            <div class="forces-grid">
+                <div class="card force-card">
+                    <div class="force-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+                        </span>
+                        <div>
+                            <h3>Rigueur</h3>
+                            <span class="competence-sub">Fiabiliser les données avant d'analyser</span>
+                        </div>
+                    </div>
+                    <ul class="dot-list">
+                        <li>Nettoyage et imputation des valeurs manquantes (48,7 % sur une variable du projet diabète)</li>
+                        <li>Détection et suppression des doublons (projet Breaking Bad)</li>
+                        <li>Validation statistique des résultats (tests de Student, ANOVA, Tukey HSD)</li>
+                    </ul>
+                </div>
+
+                <div class="card force-card">
+                    <div class="force-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 2z"/></svg>
+                        </span>
+                        <div>
+                            <h3>Curiosité</h3>
+                            <span class="competence-sub">Explorer un nouvel outil à chaque projet</span>
+                        </div>
+                    </div>
+                    <ul class="dot-list">
+                        <li>De la statistique (R) à l'IoT (Arduino), en passant par la BI (Power BI) et les bases graphes (Neo4j)</li>
+                        <li>Prise en main autonome d'un nouvel outil à chaque SAE (FME, R Shiny, MIT App Inventor)</li>
+                        <li>Veille sur les méthodes de data science (ACP, AFM, LDA, CAH)</li>
+                    </ul>
+                </div>
+
+                <div class="card force-card">
+                    <div class="force-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.3 3-6 7-6s7 2.7 7 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2c2.9.4 5 2.6 5 5.8"/></svg>
+                        </span>
+                        <div>
+                            <h3>Travail d'équipe</h3>
+                            <span class="competence-sub">Collaborer sur des projets techniques partagés</span>
+                        </div>
+                    </div>
+                    <ul class="dot-list">
+                        <li>SAE réalisées en binôme (Station Météo, prédiction du diabète) et en trinôme (sensométrie des miels)</li>
+                        <li>Répartition des rôles entre collecte, modélisation et rédaction du rapport</li>
+                        <li>Reporting régulier à la direction pendant le stage chez GROUPE ZOH</li>
+                    </ul>
+                </div>
+
+                <div class="card force-card">
+                    <div class="force-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8l-2.5 6L8 16l2.5-6L16 8z"/></svg>
+                        </span>
+                        <div>
+                            <h3>Autonomie</h3>
+                            <span class="competence-sub">Mener un projet de bout en bout</span>
+                        </div>
+                    </div>
+                    <ul class="dot-list">
+                        <li>Conception seul d'un datawarehouse complet, du scraping à PostgreSQL (Breaking Bad)</li>
+                        <li>Stage à l'international : diagnostic des besoins, collecte des données et livraison des tableaux de bord</li>
+                        <li>Auto-formation sur de nouveaux outils sans encadrement direct</li>
+                    </ul>
+                </div>
+
+                <div class="card force-card">
+                    <div class="force-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </span>
+                        <div>
+                            <h3>Communication</h3>
+                            <span class="competence-sub">À l'écrit comme à l'oral</span>
+                        </div>
+                    </div>
+                    <ul class="dot-list">
+                        <li>Rédaction de rapports techniques complets (jusqu'à 61 pages pour le projet diabète)</li>
+                        <li>Soutenances orales des résultats et recommandations à l'issue de chaque SAE</li>
+                        <li>Vulgarisation de résultats statistiques complexes pour un public non expert (recommandations marketing du projet miel)</li>
+                    </ul>
+                </div>
+
+                <div class="card force-card">
+                    <div class="force-head">
+                        <span class="competence-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7M21 3v6h-6"/></svg>
+                        </span>
+                        <div>
+                            <h3>Adaptabilité</h3>
+                            <span class="competence-sub">Apprendre vite, changer de contexte</span>
+                        </div>
+                    </div>
+                    <ul class="dot-list">
+                        <li>Stage à l'international (Côte d'Ivoire) : nouvel environnement professionnel et culturel</li>
+                        <li>Changement de cursus : licence mathématiques-informatique en Côte d'Ivoire, puis BUT Sciences des Données en France</li>
+                        <li>Passage d'une méthodologie à l'autre selon les projets (SAE académiques, mission en entreprise)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <span class="section-kicker">Discutons</span>
+            <h2>Contactez-moi</h2>
+
+            <form id="contact-form" action="https://formspree.io/f/mvzbklla" method="post">
+
+                <div class="form-group">
+                    <label for="name">Nom et prénom :</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse email :</label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Sujet :</label>
+                    <input type="text" id="subject" name="subject" placeholder="Objet de votre message">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer le message</button>
+
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>BUT Sciences des Données</h3>
+            <img src="./image/Logo.png" alt="Logo IUT" width="100">
+            <p>Formation spécialisée en analyse et exploitation des données.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>À propos</h3>
+            <p>
+                Formation visant à former des professionnels capables de collecter,
+                analyser et exploiter les données pour accompagner la prise de décision.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Localisation</h3>
+            <address>
+                IUT de Carcassonne<br>
+                1 Rue Pierre-Paul Riquet<br>
+                11000 Carcassonne, France<br>
+                <a href="mailto:contact@iut-carcassonne.fr">contact@iut-carcassonne.fr</a>
+            </address>
+        </div>
+
+        <!-- RESEAUX -->
+        <div class="footer-section">
+            <h3>Réseaux professionnels</h3>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aboubakar-coulibaly-b028962bb/" target="_blank" rel="noopener noreferrer">
+                    <img src="./image/logo1.png" alt="Logo LinkedIn" width="24" height="24">
+                    🔗 LinkedIn
+                </a>
+
+                <a href="https://github.com/coulibaly-abou?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <img src="./image/logo2.png" alt="Logo GitHub" width="24" height="24">
+                    💻 GitHub
+                </a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
 </body>
 </html>

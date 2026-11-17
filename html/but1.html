@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'un étudiant en Sciences des Données spécialisé en modélisation statistique. Présentation de projets en analyse de données, scraping et traitement statistique.">
+    <title>Portfolio | Projet Starlink</title>
+    <link rel="stylesheet" href="../css/but1.css">
+</head>
+<body>
+
+    <header class="hero" role="banner">
+        <nav class="navbar" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a class="logo" href="../index.html">Portfolio</a>
+
+                <ul class="menu">
+                    <li><a href="../index.html">Accueil</a></li>
+
+                    <li class="submenu">
+                        <a href="../index.html#apropos" aria-haspopup="true">À propos</a>
+                        <ul class="dropdown">
+                            <li><a href="../html/interet.html">Centres d’intérêt</a></li>
+                            <li><a href="../html/cv.html">Mon CV</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu">
+                        <a href="#projet-starlink" aria-haspopup="true">Ce projet</a>
+                        <ul class="dropdown">
+                            <li><a href="#objectif">Objectif du projet</a></li>
+                            <li><a href="#scraping">Scraping de données</a></li>
+                            <li><a href="#cartes-du-ciel">Cartes du ciel</a></li>
+                            <li><a href="#analyse-statistique">Analyse statistique</a></li>
+                            <li><a href="#etude-univariee">Étude univariée</a></li>
+                            <li><a href="#etude-bivariee">Étude bivariée</a></li>
+                            <li><a href="#etude-trajectoire">Étude de la trajectoire</a></li>
+                            <li><a href="#application-r-shiny">Application R Shiny</a></li>
+                            <li><a href="#conclusion">Conclusion</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu">
+                        <a href="../index.html#projets" aria-haspopup="true">Autres projets</a>
+                        <ul class="dropdown">
+                            <li><a href="../index.html#projet-scoring">Scoring crédit (BUT3)</a></li>
+                            <li><a href="../index.html#projet-ligue1">Ligue 1 ivoirienne (BUT3)</a></li>
+                            <li><a href="../html/but2.html">Station Météo</a></li>
+                            <li><a href="../html/stage.html">Stage Power BI</a></li>
+                            <li><a href="../html/diabete.html">Prédiction du diabète</a></li>
+                            <li><a href="../html/breakingbad.html">Datawarehouse Breaking Bad</a></li>
+                            <li><a href="../html/miel.html">Sensométrie des miels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-container">
+            <div class="header-text">
+                <p class="eyebrow">Étudiant en Sciences des Données</p>
+
+                <h1 class="hero-title">Étude statistique des satellites <span class="text-accent">Starlink</span></h1>
+
+                <p class="tagline">
+                    Spécialisé en modélisation statistique, analyse de données et visualisation,
+                    avec une attention particulière portée à la qualité des données et à la rigueur méthodologique.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projet-starlink">Voir mes projets</a>
+                    <a class="btn btn-secondary" href="../html/cv.html">Consulter mon CV</a>
+                </div>
+            </div>
+
+            <div class="header-image">
+                <img src="../image/personne-deprimee-fond-blanc-illustration-vectorielle-dessin-au-trait_969863-1165.avif"
+                     alt="Portrait de l'étudiant en Sciences des Données">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <article class="project-card" id="projet-starlink">
+
+            <div class="project-header">
+                <span class="project-badge">Projet 1</span>
+                <h2>Vue d’ensemble du projet</h2>
+            </div>
+
+            <!-- OBJECTIF -->
+            <section class="project-row" id="objectif">
+                <div class="project-image">
+                    <img src="../image/EarthSat_HD_lrg.jpg" alt="satellites autour de la Terre">
+                </div>
+
+                <div class="project-content">
+                    <h3>Objectif du projet</h3>
+                    <p>
+                        L’objectif de cette étude est de réaliser une analyse statistique approfondie
+                        des satellites de la constellation Starlink afin de mieux comprendre leur
+                        déploiement, leurs caractéristiques orbitales et leur évolution dans le temps.
+                    </p>
+                    <p>
+                        Le travail consiste à exploiter des données issues de différentes sources,
+                        les filtrer, les nettoyer et les analyser à l’aide d’outils comme Python et Excel.
+                    </p>
+                </div>
+            </section>
+
+            <!-- SCRAPING -->
+            <section class="project-row reverse" id="scraping">
+                <div class="project-image">
+                    <img src="../image/Capture d'écran 2026-04-15 001443.png" alt="scraping de données">
+                </div>
+
+                <div class="project-content">
+                    <h3>Scraping de données</h3>
+                    <p>
+                        Les données sont récupérées depuis le site Celestrak, qui fournit des fichiers
+                        contenant les informations sur tous les satellites. Comme ces données incluent
+                        tous les satellites, un filtrage est nécessaire.
+                    </p>
+                    <p>
+                        Un script Python est utilisé pour faire du scraping sur le site N2YO afin de
+                        récupérer les numéros NORAD des satellites Starlink. Ces identifiants sont ensuite
+                        comparés avec ceux du fichier initial pour ne conserver que les satellites Starlink.
+                        Le script gère aussi les mises à jour régulières afin de maintenir la base de données
+                        à jour et d'assurer la fiabilité des analyses réalisées.
+                    </p>
+                    <p>
+                        Le traitement inclut la validation des données extraites, la suppression des doublons
+                        et le nettoyage des valeurs manquantes. Cela garantit que les analyses statistiques
+                        portent sur un échantillon cohérent et que les résultats reflètent fidèlement
+                        les caractéristiques de la flotte Starlink.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CARTES DU CIEL -->
+            <section class="project-row sky-section" id="cartes-du-ciel">
+                <div class="project-images-grid">
+                    <img
+                        src="../image/Capture d'écran 2026-04-15 003714.png"
+                        alt="Carte du ciel globale représentant l'ensemble des satellites"
+                    >
+                    <img
+                        src="../image/Capture d'écran 2026-04-15 003926.png"
+                        alt="Carte du ciel filtrée représentant les satellites Starlink"
+                    >
+                </div>
+
+                <div class="project-content">
+                    <h3>Cartes du ciel</h3>
+                    <p>
+                        Deux visualisations ont été réalisées. La première est une carte du ciel globale
+                        qui représente tous les satellites présents dans la base de données. Elle permet
+                        d’avoir une vue d’ensemble de la répartition des satellites.
+                    </p>
+                    <p>
+                        La seconde est une carte filtrée, montrant uniquement les satellites Starlink.
+                        Elle permet d’observer leur organisation, leur densité et leur distribution
+                        dans l’espace. La comparaison des deux cartes permet de situer Starlink parmi
+                        l’ensemble des satellites.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ANALYSE STATISTIQUE (vue d'ensemble) -->
+            <section class="project-row reverse" id="analyse-statistique">
+                <div class="project-image">
+                    <img src="../image/concept-about-statistics-data-models-and-analysis-on-a-transparent-H6B1TK (1).jpg" alt="analyse statistique">
+                </div>
+
+                <div class="project-content">
+                    <h3>Analyse statistique</h3>
+                    <p>
+                        Après le traitement des données, plusieurs analyses statistiques sont réalisées
+                        pour identifier les tendances majeures de la constellation Starlink.
+                    </p>
+                    <p>
+                        Les analyses univariées décrivent les variables individuellement, tandis que
+                        les analyses bivariées permettent d’identifier les relations entre différentes
+                        caractéristiques orbitales.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ETUDE UNIVARIEE -->
+            <section class="project-row" id="etude-univariee">
+                <div class="project-image">
+                    <img src="../image/concept-about-statistics-data-models-and-analysis-on-a-transparent-H6B1TK (1).jpg" alt="analyse univariée">
+                </div>
+
+                <div class="project-content">
+                    <h3>Étude univariée</h3>
+                    <p>
+                        Cette analyse permet de comprendre la distribution de chaque variable individuellement
+                        (moyenne, médiane, dispersion) afin d’identifier les caractéristiques dominantes
+                        de la constellation avant de croiser les variables entre elles.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ETUDE BIVARIEE — à compléter -->
+            <section class="project-row reverse placeholder" id="etude-bivariee">
+                <div class="project-image placeholder-image" aria-hidden="true"></div>
+
+                <div class="project-content">
+                    <span class="coming-soon">Section en cours de rédaction</span>
+                    <h3>Étude bivariée</h3>
+                    <p>
+                        Cette partie présentera les relations entre plusieurs variables orbitales
+                        (altitude, inclinaison, période de révolution) afin de mettre en évidence
+                        d’éventuelles corrélations au sein de la constellation Starlink.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ETUDE DE LA TRAJECTOIRE — à compléter -->
+            <section class="project-row placeholder" id="etude-trajectoire">
+                <div class="project-image placeholder-image" aria-hidden="true"></div>
+
+                <div class="project-content">
+                    <span class="coming-soon">Section en cours de rédaction</span>
+                    <h3>Étude de la trajectoire</h3>
+                    <p>
+                        Cette section détaillera le suivi de la trajectoire orbitale des satellites
+                        Starlink dans le temps, à partir des paramètres orbitaux collectés.
+                    </p>
+                </div>
+            </section>
+
+            <!-- APPLICATION R SHINY — à compléter -->
+            <section class="project-row reverse placeholder" id="application-r-shiny">
+                <div class="project-image placeholder-image" aria-hidden="true"></div>
+
+                <div class="project-content">
+                    <span class="coming-soon">Section en cours de rédaction</span>
+                    <h3>Application R Shiny</h3>
+                    <p>
+                        Une application interactive R Shiny sera présentée ici pour permettre
+                        l’exploration dynamique des données et des visualisations du projet.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CONCLUSION -->
+            <section class="project-row conclusion" id="conclusion">
+                <div class="project-content">
+                    <h3>Conclusion</h3>
+                    <p>
+                        Ce projet a permis de mettre en pratique l’ensemble de la chaîne de traitement
+                        de la donnée : collecte par scraping, nettoyage, analyse statistique et
+                        visualisation, appliquée à un cas concret et évolutif : la constellation Starlink.
+                    </p>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>BUT Sciences des Données</h3>
+                <p>Formation spécialisée en analyse et exploitation des données.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Projet</h3>
+                <p>Étude statistique de la constellation Starlink — IUT de Carcassonne.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <p><a href="../index.html">Retour à l’accueil</a></p>
+                <p><a href="../html/cv.html">Consulter mon CV</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
