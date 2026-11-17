@@ -2,15 +2,15 @@
    1. VARIABLES — thème clair, professionnel, sans angles arrondis
 ========================================================= */
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1e40af;
-    --accent: #0ea5b7;
+    --primary: #1d4ed8;
+    --primary-dark: #1e3a8a;
+    --accent: #1d4ed8;
     --ink: #0f172a;
     --ink-muted: #475569;
     --ink-soft: #64748b;
-    --bg: #f6f9ff;
-    --bg-soft: #eef3fb;
-    --bg-alt: #e6edf9;
+    --bg: #ffffff;
+    --bg-soft: #f8fafc;
+    --bg-alt: #f1f5f9;
     --border: #e2e8f0;
     --white: #ffffff;
 
@@ -26,9 +26,9 @@
     --container: 1120px;
     --section-spacing: 90px;
 
-    --amber: #f59e0b;
-    --amber-dark: #b45309;
-    --amber-soft: #fffaf0;
+    --amber: #1d4ed8;
+    --amber-dark: #1e3a8a;
+    --amber-soft: #f8fafc;
 }
 
 /* =========================================================
@@ -165,7 +165,7 @@ header::after {
 }
 
 .header-text h1 .text-accent {
-    background: linear-gradient(90deg, var(--primary), var(--accent));
+    background: var(--primary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -200,7 +200,7 @@ header::after {
 
 .btn-primary {
     color: var(--white);
-    background: linear-gradient(90deg, var(--primary), var(--accent));
+    background: var(--primary);
     border-color: var(--primary);
 }
 
@@ -726,7 +726,7 @@ h2 {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
+    background: var(--primary);
 }
 
 .card:hover {
@@ -926,7 +926,7 @@ h2 {
     gap: 0.4rem;
     padding: 0.85rem 1.2rem;
     border-radius: 10px;
-    background: linear-gradient(90deg, var(--amber), #fb923c);
+    background: var(--primary);
     color: var(--white);
     font-weight: 700;
     font-size: 0.95rem;
@@ -1143,7 +1143,7 @@ h2 {
 
 .btn-demo {
     color: var(--white);
-    background: linear-gradient(90deg, var(--amber), #fb923c);
+    background: var(--primary);
 }
 
 .btn-gh:hover,
@@ -1459,7 +1459,7 @@ textarea:focus {
     width: 100%;
     padding: 1rem;
     border: 1px solid var(--primary);
-    background: linear-gradient(90deg, var(--primary), var(--accent));
+    background: var(--primary);
     color: var(--white);
     font-size: 1rem;
     font-weight: 700;
@@ -1618,3 +1618,143 @@ footer a:hover {
         font-size: 3rem;
     }
 }
+
+/* =========================================================
+   STYLE PROFESSIONNEL (surcharge)
+========================================================= */
+/* Sections : blanc / gris très clair en alternance */
+section { background: var(--white); }
+section:nth-of-type(even) { background: var(--bg-soft); }
+
+/* En-tête sombre */
+header {
+    background: #0b1220;
+    color: #e2e8f0;
+}
+header::before,
+header::after { display: none; }
+
+.eyebrow {
+    background: transparent;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    color: #93c5fd;
+    letter-spacing: 1px;
+}
+.header-text h1 { color: #ffffff; }
+.header-text h1 .text-accent {
+    background: none;
+    -webkit-text-fill-color: #60a5fa;
+    color: #60a5fa;
+}
+.tagline { color: #cbd5e1; }
+
+.hero-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.8rem;
+    margin: 1.4rem 0 0;
+    padding: 0;
+    list-style: none;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+.hero-facts strong {
+    color: #ffffff;
+    font-size: 1.15rem;
+    margin-right: 0.25rem;
+}
+
+.btn-primary { background: var(--primary); border-color: var(--primary); }
+.btn-primary:hover { background: #2563eb; }
+header .btn-secondary {
+    background: transparent;
+    color: #e2e8f0;
+    border-color: rgba(148, 163, 184, 0.5);
+}
+header .btn-secondary:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.avatar {
+    background: #1e293b;
+    border: 2px solid #334155;
+    box-shadow: none;
+    color: #93c5fd;
+}
+
+/* Barre de navigation */
+nav { background: rgba(255, 255, 255, 0.95); }
+
+/* Icônes : une seule couleur */
+.credential-icon,
+.competence-icon { background: var(--primary); }
+
+/* Compétences : fond neutre, texte sombre */
+.competence-group--blue,
+.competence-group--purple,
+.competence-group--indigo,
+.competence-group--green,
+.competence-group--red,
+.competence-group--pink,
+.competence-group--teal { background: var(--white); }
+
+.competence-group .skills-list--pills li { color: var(--ink); }
+.skill-dot { background: var(--primary); }
+
+/* Cartes projets récents */
+.recent-card--featured { border-top: 3px solid var(--primary); }
+.recent-badge {
+    background: var(--bg-alt);
+    border-color: var(--border);
+    color: var(--ink-muted);
+}
+.recent-card > p strong { color: var(--ink); }
+.btn-demo { background: var(--primary); }
+
+/* Projets académiques compacts */
+.compact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+.compact-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem 1.4rem;
+    border-radius: 12px;
+    background: var(--white);
+}
+.compact-card::before { display: none; }
+.compact-level {
+    margin-bottom: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+.compact-card h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    line-height: 1.35;
+}
+.compact-card p {
+    margin: 0 0 0.9rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--ink-muted);
+}
+.compact-card .tech-tags { margin-bottom: 0.9rem; }
+.compact-card .card-link { margin-top: auto; font-size: 0.9rem; }
+
+@media (max-width: 900px) {
+    .compact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .hero-facts { justify-content: center; }
+}
+@media (max-width: 600px) {
+    .compact-grid { grid-template-columns: 1fr; }
+}
+
+/* Texte aligné à gauche (pas de justification) */
+.apropos-main p, .card p { text-align: left; }
