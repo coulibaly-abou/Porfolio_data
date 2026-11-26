@@ -1,0 +1,338 @@
+/* =========================================================
+   Réalisations, passions et contact : complète style.css
+   (mêmes couleurs, angles droits)
+========================================================= */
+
+/* ---------- Réalisations ---------- */
+.realisations .section-container {
+    display: block;
+}
+
+.realisations-filtres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: -1.5rem 0 2.5rem;
+}
+
+.filtre {
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--border);
+    background: var(--white);
+    color: var(--ink-muted);
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filtre:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.filtre.is-active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
+.realisations-liste {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.realisation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem 1.7rem 1.5rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.realisation:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--primary);
+}
+
+.realisation[hidden] {
+    display: none;
+}
+
+/* les deux projets phares occupent toute la largeur */
+.realisation--phare {
+    grid-column: 1 / -1;
+    border-left-color: var(--primary);
+}
+
+.realisation-tete {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.realisation-type {
+    padding: 0.2rem 0.6rem;
+    background: var(--bg-alt);
+    color: var(--primary-dark);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.realisation-date {
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+}
+
+.realisation h3 {
+    margin-bottom: 0.9rem;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    color: var(--ink);
+}
+
+.realisation--phare h3 {
+    font-size: 1.45rem;
+}
+
+.realisation h4 {
+    margin: 0.4rem 0 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.realisation p {
+    margin-bottom: 0.6rem;
+    color: var(--ink-muted);
+    font-size: 0.95rem;
+}
+
+.realisation ul:not(.tech-tags):not(.realisation-kpis) {
+    margin: 0 0 1rem;
+    padding-left: 1.1rem;
+    color: var(--ink-muted);
+    font-size: 0.95rem;
+}
+
+.realisation ul:not(.tech-tags):not(.realisation-kpis) li {
+    margin-bottom: 0.25rem;
+}
+
+.realisation ul:not(.tech-tags):not(.realisation-kpis) li::marker {
+    color: var(--primary);
+}
+
+.realisation-corps {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.realisation-kpis {
+    display: grid;
+    gap: 0.8rem;
+    margin: 0.4rem 0 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.realisation-kpis li {
+    padding: 0.7rem 1rem;
+    background: var(--bg-soft);
+    border-left: 3px solid var(--primary);
+}
+
+.realisation-kpis strong {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    color: var(--ink);
+}
+
+.realisation-kpis span {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+}
+
+.realisation-liens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: auto;
+}
+
+.realisation-liens .btn-gh,
+.realisation-liens .btn-demo {
+    flex: 0 1 auto;
+    border-radius: 0;
+}
+
+/* ---------- Passions ---------- */
+.passions .section-container {
+    display: block;
+}
+
+.passions-grille {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.passion {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: var(--ink);
+}
+
+/* carte double largeur : sa hauteur suit celle de la carte voisine */
+.passion--large {
+    grid-column: span 2;
+    aspect-ratio: auto;
+}
+
+.passion--large img {
+    position: absolute;
+    inset: 0;
+}
+
+.passion--banniere {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 5;
+}
+
+.passion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.passion:hover img {
+    transform: scale(1.05);
+}
+
+.passion figcaption {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 2.5rem 1.3rem 1.1rem;
+    color: var(--white);
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.6) 55%, rgba(15, 23, 42, 0) 100%);
+}
+
+.passion-tag {
+    display: inline-block;
+    margin-bottom: 0.35rem;
+    padding: 0.1rem 0.5rem;
+    background: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.passion h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.passion p {
+    margin: 0;
+    max-width: 52ch;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+/* ---------- Contact ---------- */
+.contact-reseaux {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1.8rem;
+    color: var(--ink-muted);
+}
+
+.contact-reseaux a {
+    padding: 0.45rem 1rem;
+    border: 1px solid var(--border);
+    background: var(--white);
+    color: var(--ink);
+    font-weight: 600;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-reseaux a:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* ---------- Petits écrans ---------- */
+@media (max-width: 900px) {
+    .realisation-corps {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .passions-grille {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .passion--large,
+    .passion--banniere {
+        grid-column: 1 / -1;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 640px) {
+    .realisations-liste,
+    .passions-grille {
+        grid-template-columns: 1fr;
+    }
+
+    .passion,
+    .passion--large,
+    .passion--banniere {
+        grid-column: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .realisation {
+        padding: 1.3rem 1.2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .realisation,
+    .passion img {
+        transition: none;
+    }
+
+    .realisation:hover,
+    .passion:hover img {
+        transform: none;
+    }
+}

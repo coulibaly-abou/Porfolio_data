@@ -6,6 +6,11 @@
     <meta name="description" content="Portfolio d'Aboubakar Coulibaly, étudiant en Sciences des Données spécialisé en modélisation statistique et Business Intelligence">
     <title>Portfolio | Aboubakar Coulibaly</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/realisations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap">
+    <link rel="stylesheet" href="./css/theme.css">
 </head>
 <body>
 
@@ -20,12 +25,12 @@
                 et des modèles prédictifs, de la collecte jusqu'au déploiement.
             </p>
             <ul class="hero-facts">
-                <li><strong>10</strong> projets réalisés</li>
+                <li><strong>10</strong> réalisations</li>
                 <li><strong>1</strong> stage Data Analyst</li>
                 <li><strong>2</strong> applications en ligne</li>
             </ul>
             <div class="hero-actions">
-                <a class="btn btn-primary" href="#projets">Voir les projets</a>
+                <a class="btn btn-primary" href="#projets">Voir mes réalisations</a>
                 <a class="btn btn-secondary" href="./html/cv.html">CV</a>
                 <a class="btn btn-secondary" href="https://github.com/coulibaly-abou" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
@@ -38,20 +43,18 @@
     <nav aria-label="Navigation principale">
         <ul class="menu">
             <li><a href="#accueil">Accueil</a></li>
-
             <li class="submenu">
                 <a href="#apropos">À propos</a>
                 <ul class="dropdown">
-                    <li><a href="./html/interet.html">Centres d'intérêt</a></li>
+                    <li><a href="#passions">Ce que j'aime</a></li>
                     <li><a href="./html/cv.html">Mon CV</a></li>
                 </ul>
             </li>
-
-            <li><a href="#projets">Projets</a></li>
-
-            <li><a href="#experience">Expérience</a></li>
-            <li><a href="#competences">Compétences</a></li>
             <li><a href="#formation">Formation</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projets">Réalisations</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#passions">Passions</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -150,204 +153,136 @@
                             Centres d'intérêt
                         </h3>
                         <p>
-                            Football, musculation, musique et voyages. Mon intérêt pour le football est à
-                            l'origine du projet sur la Ligue 1 ivoirienne.
+                            Football, musculation, musique, livres et documentaires scientifiques, mangas.
+                            Mon intérêt pour le football est à l'origine du projet sur la Ligue 1 ivoirienne.
                         </p>
-                        <a class="card-link" href="./html/interet.html">En savoir plus <span aria-hidden="true">→</span></a>
+                        <a class="card-link" href="#passions">En savoir plus <span aria-hidden="true">→</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJETS -->
-    <section class="projets" id="projets">
+    <!-- FORMATION -->
+    <section class="formation" id="formation">
         <div class="section-container">
-            <span class="section-kicker">Réalisations</span>
-            <h2>Mes projets</h2>
-            <p class="section-intro">
-                Projets classés du plus récent au plus ancien. Le code source des projets récents est
-                disponible sur GitHub.
-            </p>
+            <span class="section-kicker">Parcours</span>
+            <h2>Ma formation</h2>
 
-            <!-- PROJETS RECENTS (GitHub) -->
-            <div class="projets-subhead">
-                <h3>Projets récents <span class="projets-subhead-tag">BUT3 · 2026</span></h3>
-                <a class="github-all" href="https://github.com/coulibaly-abou?tab=repositories" target="_blank" rel="noopener noreferrer">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
-                    Tous mes dépôts
-                </a>
-            </div>
+            <div class="formation-timeline formation-timeline--grid">
 
-            <div class="recent-grid">
-
-                <article class="card recent-card recent-card--featured" id="projet-scoring">
-                    <div class="recent-meta">
-                        <span class="recent-date">Novembre 2026</span>
-                        <span class="recent-badge">Machine Learning</span>
+                <article class="card credential-card">
+                    <div class="formation-visuel formation-visuel--logos">
+                        <img src="./image/formation/logo_iut.png" alt="Logo de l'IUT de Perpignan, Carcassonne, Narbonne" width="190" height="118" loading="lazy">
+                        <img src="./image/formation/logo_upvd.png" alt="Logo de l'Université de Perpignan Via Domitia" width="190" height="94" loading="lazy">
                     </div>
-                    <h3>Scoring crédit — probabilité de défaut</h3>
+                    <div class="credential-head">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+                        </span>
+                        <div>
+                            <h3>BUT Sciences des Données</h3>
+                            <a class="credential-org" href="./html/cv.html">Université Perpignan Via Domitia — Campus de Carcassonne</a>
+                            <span class="credential-date">2024 – aujourd'hui · 3<sup>e</sup> année</span>
+                        </div>
+                        <a class="credential-external" href="./html/cv.html" aria-label="Voir mon CV" title="Voir mon CV">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+                        </a>
+                    </div>
                     <p>
-                        <strong>Problème :</strong> estimer le risque de non-remboursement d'une demande de
-                        crédit à la consommation, avec un modèle explicable pour le client et le régulateur.
+                        Formation généraliste en science des données, spécialisée depuis la 2<sup>e</sup> année
+                        dans le parcours <strong>Exploration et Modélisation Statistique</strong> — statistiques,
+                        programmation, bases de données et Business Intelligence.
                     </p>
+                    <div class="learnings-box">
+                        <span class="credential-icon credential-icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><path d="M2 5c3-1.5 6-1.5 9 0v14c-3-1.5-6-1.5-9 0V5z"/><path d="M22 5c-3-1.5-6-1.5-9 0v14c3-1.5 6-1.5 9 0V5z"/></svg>
+                        </span>
+                        <div>
+                            <h4>Apprentissages clés :</h4>
+                            <p>
+                                Python, R, SQL et Power BI ; modélisation statistique et prédictive ; collecte
+                                et nettoyage de données (scraping, ETL) ; conception de bases de données
+                                relationnelles.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card credential-card">
+                    <figure class="formation-visuel formation-visuel--photo">
+                        <img src="./image/formation/ufhb_campus.webp" alt="Campus de l'Université Félix Houphouët-Boigny à Abidjan" width="800" height="400" loading="lazy">
+                        <img class="formation-badge" src="./image/formation/logo_ufhb.png" alt="Logo de l'Université Félix Houphouët-Boigny" width="96" height="70" loading="lazy">
+                        <figcaption>Photo : Hanay, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>, Wikimedia Commons</figcaption>
+                    </figure>
+                    <div class="credential-head">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+                        </span>
+                        <div>
+                            <h3>Licence 1 — Mathématiques et Informatique</h3>
+                            <a class="credential-org" href="./html/cv.html">Université Félix Houphouët-Boigny — Abidjan, Côte d'Ivoire</a>
+                            <span class="credential-date">2023 – 2024</span>
+                        </div>
+                        <a class="credential-external" href="./html/cv.html" aria-label="Voir mon CV" title="Voir mon CV">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+                        </a>
+                    </div>
                     <p>
-                        <strong>Réalisation :</strong> 307 507 demandes (Home Credit). Scorecard à 18 variables
-                        comparée à un modèle LightGBM, probabilité calibrée, seuil d'acceptation optimisé sur
-                        le profit, application web, tests et documentation.
+                        Première année de licence en mathématiques et informatique, avant de partir poursuivre
+                        mes études en France, à l'IUT de Carcassonne, en BUT Sciences des Données.
                     </p>
-                    <ul class="recent-kpis">
-                        <li><strong>0,505</strong><span>Gini sur données de test</span></li>
-                        <li><strong>×2,8</strong><span>profit vs modèle de référence</span></li>
-                        <li><strong>4,9 %</strong><span>taux de défaut des acceptés</span></li>
-                    </ul>
-                    <ul class="tech-tags">
-                        <li>Python</li><li>LightGBM</li><li>WOE / IV</li><li>Streamlit</li><li>Docker</li>
-                    </ul>
-                    <div class="recent-actions">
-                        <a class="btn-gh" href="https://github.com/coulibaly-abou/scoring-credit" target="_blank" rel="noopener noreferrer">Code GitHub</a>
-                        <a class="btn-demo" href="https://scoring-credit-couly.streamlit.app/" target="_blank" rel="noopener noreferrer">Application en ligne <span aria-hidden="true">↗</span></a>
+                    <div class="learnings-box">
+                        <span class="credential-icon credential-icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><path d="M2 5c3-1.5 6-1.5 9 0v14c-3-1.5-6-1.5-9 0V5z"/><path d="M22 5c-3-1.5-6-1.5-9 0v14c3-1.5 6-1.5 9 0V5z"/></svg>
+                        </span>
+                        <div>
+                            <h4>Apprentissages clés :</h4>
+                            <p>
+                                Fondamentaux mathématiques (algèbre, analyse) et bases de l'algorithmique et de
+                                la programmation.
+                            </p>
+                        </div>
                     </div>
                 </article>
 
-                <article class="card recent-card recent-card--featured" id="projet-ligue1">
-                    <div class="recent-meta">
-                        <span class="recent-date">Octobre 2026</span>
-                        <span class="recent-badge">Data Engineering &amp; ML</span>
+                <article class="card credential-card">
+                    <!-- Pour mettre une photo du lycée : déposer image/formation/lycee_affery.webp
+                         et remplacer ce bloc par <figure class="formation-visuel formation-visuel--photo"><img src="./image/formation/lycee_affery.webp" alt="Lycée Municipal d'Affery"></figure> -->
+                    <div class="formation-visuel formation-visuel--lycee" role="img" aria-label="Lycée Municipal d'Affery, Afféry (Akoupé), Côte d'Ivoire">
+                        <span class="formation-monogramme">LMA</span>
+                        <span class="formation-lieu">Afféry · Akoupé · Côte d'Ivoire</span>
                     </div>
-                    <h3>Plateforme d'analyse — Ligue 1 ivoirienne</h3>
+                    <div class="credential-head">
+                        <span class="credential-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+                        </span>
+                        <div>
+                            <h3>Baccalauréat Scientifique</h3>
+                            <a class="credential-org" href="./html/cv.html">Lycée Municipal d'Affery — Côte d'Ivoire</a>
+                            <span class="credential-date">2022</span>
+                        </div>
+                        <a class="credential-external" href="./html/cv.html" aria-label="Voir mon CV" title="Voir mon CV">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+                        </a>
+                    </div>
                     <p>
-                        <strong>Problème :</strong> les données du championnat ivoirien sont dispersées,
-                        incomplètes et peu exploitées.
+                        Baccalauréat série scientifique, avec une spécialité Mathématiques Expertes en
+                        Terminale — le point de départ de mon goût pour le raisonnement logique et
+                        mathématique.
                     </p>
-                    <p>
-                        <strong>Réalisation :</strong> collecte web et API sur 10 saisons, stockage brut
-                        MongoDB, base analytique PostgreSQL, six modèles de prédiction comparés en validation
-                        temporelle (Elo retenu), tableau de bord Streamlit.
-                    </p>
-                    <ul class="recent-kpis">
-                        <li><strong>1 934</strong><span>matchs collectés</span></li>
-                        <li><strong>43,7 %</strong><span>précision (référence : 35,4 %)</span></li>
-                        <li><strong>12</strong><span>tables PostgreSQL</span></li>
-                    </ul>
-                    <ul class="tech-tags">
-                        <li>Python</li><li>MongoDB</li><li>PostgreSQL</li><li>PyTorch</li><li>Streamlit</li>
-                    </ul>
-                    <div class="recent-actions">
-                        <a class="btn-gh" href="https://github.com/coulibaly-abou/ligue1-ci-data" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                    <div class="learnings-box">
+                        <span class="credential-icon credential-icon--sm" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><path d="M2 5c3-1.5 6-1.5 9 0v14c-3-1.5-6-1.5-9 0V5z"/><path d="M22 5c-3-1.5-6-1.5-9 0v14c3-1.5 6-1.5 9 0V5z"/></svg>
+                        </span>
+                        <div>
+                            <h4>Apprentissages clés :</h4>
+                            <p>
+                                Spécialité Mathématiques Expertes ; premières bases du raisonnement
+                                scientifique et logique.
+                            </p>
+                        </div>
                     </div>
-                </article>
-
-                <article class="card recent-card" id="projet-etl">
-                    <div class="recent-meta">
-                        <span class="recent-date">Novembre 2026</span>
-                        <span class="recent-badge">SAÉ 5.02 · Trinôme</span>
-                    </div>
-                    <h3>ETL Stack Exchange — XML vers PostgreSQL et MongoDB</h3>
-                    <p>
-                        Projet en équipe de 3. Migration de 20 515 enregistrements vers un modèle relationnel
-                        (8 tables) et un modèle documentaire (3 collections), via un format pivot JSON Lines
-                        validé par JSON Schema. 27 problèmes de migration identifiés, traités par 11 règles
-                        de transformation.
-                    </p>
-                    <ul class="tech-tags">
-                        <li>Python</li><li>PostgreSQL</li><li>MongoDB</li><li>JSON Schema</li>
-                    </ul>
-                    <div class="recent-actions">
-                        <a class="btn-gh" href="https://github.com/coulibaly-abou/sae502-etl-stackexchange." target="_blank" rel="noopener noreferrer">Code GitHub</a>
-                    </div>
-                </article>
-
-                <article class="card recent-card" id="projet-carte">
-                    <div class="recent-meta">
-                        <span class="recent-date">Septembre 2026</span>
-                        <span class="recent-badge">Cartographie</span>
-                    </div>
-                    <h3>Carte interactive — Manaus (Brésil)</h3>
-                    <p>
-                        Carte des points de collecte et de la station météo de Manaus, générée en Python avec
-                        Folium et publiée sur GitHub Pages (module R5.02).
-                    </p>
-                    <ul class="tech-tags">
-                        <li>Python</li><li>Folium</li><li>GitHub Pages</li>
-                    </ul>
-                    <div class="recent-actions">
-                        <a class="btn-gh" href="https://github.com/coulibaly-abou/EasyMapWebsite" target="_blank" rel="noopener noreferrer">Code GitHub</a>
-                        <a class="btn-demo" href="https://coulibaly-abou.github.io/EasyMapWebsite/ManausMap.html" target="_blank" rel="noopener noreferrer">Voir la carte <span aria-hidden="true">↗</span></a>
-                    </div>
-                </article>
-
-            </div>
-
-            <!-- AUTRES DEPOTS -->
-            <div class="other-repos">
-                <h4>Autres dépôts</h4>
-                <ul>
-                    <li>
-                        <a href="https://github.com/coulibaly-abou/sae_serie-chronologie" target="_blank" rel="noopener noreferrer">Séries chronologiques — décès par maladies pulmonaires (R)</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/coulibaly-abou/sae_sondage" target="_blank" rel="noopener noreferrer">Techniques de sondage (SAÉ)</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/coulibaly-abou/Creation_jouer_mon_champion" target="_blank" rel="noopener noreferrer">Jeu « Mon champion » en Python</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- PROJETS ACADEMIQUES BUT1 / BUT2 -->
-            <div class="projets-subhead">
-                <h3>Projets académiques <span class="projets-subhead-tag">BUT1 · BUT2</span></h3>
-            </div>
-
-            <div class="compact-grid">
-
-                <article class="card compact-card">
-                    <span class="compact-level">BUT1</span>
-                    <h4>Starlink — étude statistique d'une constellation</h4>
-                    <p>Analyse de plus de 7 000 satellites à partir de données Celestrak et N2YO : fiabilisation, cartographie du ciel, application R Shiny.</p>
-                    <ul class="tech-tags"><li>R</li><li>R Shiny</li><li>Web scraping</li></ul>
-                    <a class="card-link" href="./html/but1.html">Voir le projet <span aria-hidden="true">→</span></a>
-                </article>
-
-                <article class="card compact-card">
-                    <span class="compact-level">BUT2 · binôme</span>
-                    <h4>Station météo connectée (IoT)</h4>
-                    <p>Chaîne de mesure (température, humidité, pression, luminosité) transmise en Bluetooth, stockée dans MySQL et Google Sheets, consultable sur mobile.</p>
-                    <ul class="tech-tags"><li>Arduino / C++</li><li>PHP</li><li>MySQL</li></ul>
-                    <a class="card-link" href="./html/but2.html">Voir le projet <span aria-hidden="true">→</span></a>
-                </article>
-
-                <article class="card compact-card">
-                    <span class="compact-level">BUT2 · stage</span>
-                    <h4>Solution décisionnelle Power BI</h4>
-                    <p>Suivi de 180 chantiers pour GROUPE ZOH : nettoyage Power Query, modèle en étoile, mesures DAX, cinq tableaux de bord.</p>
-                    <ul class="tech-tags"><li>Power BI</li><li>Power Query</li><li>DAX</li></ul>
-                    <a class="card-link" href="./html/stage.html">Voir le projet <span aria-hidden="true">→</span></a>
-                </article>
-
-                <article class="card compact-card">
-                    <span class="compact-level">BUT2 · binôme</span>
-                    <h4>Prédiction du diabète de type 2</h4>
-                    <p>Base Pima Indians Diabetes : comparaison de modèles explicatifs et de classification, 72,9 % d'accuracy.</p>
-                    <ul class="tech-tags"><li>Régression</li><li>Arbre de décision</li><li>Classification</li></ul>
-                    <a class="card-link" href="./html/diabete.html">Voir le projet <span aria-hidden="true">→</span></a>
-                </article>
-
-                <article class="card compact-card">
-                    <span class="compact-level">BUT2 · individuel</span>
-                    <h4>Datawarehouse Breaking Bad</h4>
-                    <p>Base décisionnelle : collecte par web scraping, flux ETL FME, chargement PostgreSQL, modèles en étoile et en flocon.</p>
-                    <ul class="tech-tags"><li>Python</li><li>FME</li><li>PostgreSQL</li></ul>
-                    <a class="card-link" href="./html/breakingbad.html">Voir le projet <span aria-hidden="true">→</span></a>
-                </article>
-
-                <article class="card compact-card">
-                    <span class="compact-level">BUT2 · trinôme</span>
-                    <h4>Sensométrie — analyse de 4 miels</h4>
-                    <p>Panel de 143 dégustateurs, 19 descripteurs : ACP, AFM, AFCM, CAH et LDA (58,4 % de bon classement).</p>
-                    <ul class="tech-tags"><li>ACP / AFM</li><li>CAH</li><li>LDA</li></ul>
-                    <a class="card-link" href="./html/miel.html">Voir le projet <span aria-hidden="true">→</span></a>
                 </article>
 
             </div>
@@ -380,6 +315,250 @@
                     <a class="card-link" href="./html/stage.html">Voir le rapport complet <span aria-hidden="true">→</span></a>
                 </article>
             </div>
+        </div>
+    </section>
+
+    <!-- REALISATIONS -->
+    <section class="realisations" id="projets">
+        <div class="section-container">
+            <span class="section-kicker">Réalisations</span>
+            <h2>Mes réalisations</h2>
+            <p class="section-intro">
+                Mes projets du plus récent au plus ancien. Pour chacun : le contexte, ce qui était en jeu,
+                les résultats obtenus et les liens vers le code ou l'application.
+            </p>
+
+            <div class="realisations-filtres" role="group" aria-label="Filtrer les réalisations">
+                <button type="button" class="filtre is-active" data-filtre="tous" aria-pressed="true">Toutes</button>
+                <button type="button" class="filtre" data-filtre="ml" aria-pressed="false">Machine Learning</button>
+                <button type="button" class="filtre" data-filtre="data" aria-pressed="false">Data Engineering</button>
+                <button type="button" class="filtre" data-filtre="stat" aria-pressed="false">Statistiques</button>
+                <button type="button" class="filtre" data-filtre="bi" aria-pressed="false">BI &amp; IoT</button>
+            </div>
+
+            <div class="realisations-liste">
+
+                <article class="realisation realisation--phare" data-cat="ml" id="projet-scoring">
+                    <img class="realisation-image" style="object-position: left top" src="./image/projets/scoring.webp" alt="Application de scoring crédit : étude d'une demande" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">Projet personnel</span>
+                        <span class="realisation-date">Novembre 2026</span>
+                    </div>
+                    <h3>Scoring crédit : probabilité de défaut</h3>
+                    <div class="realisation-corps">
+                        <div>
+                            <h4>Contexte</h4>
+                            <p>307 507 demandes de crédit à la consommation (Home Credit) : estimer le risque de non-remboursement avec un modèle explicable pour le client et le régulateur.</p>
+                            <h4>Enjeux</h4>
+                            <ul>
+                                <li>Accepter plus de bons dossiers sans augmenter les défauts</li>
+                                <li>Justifier chaque décision (scorecard à 18 variables, WOE / IV)</li>
+                            </ul>
+                        </div>
+                        <ul class="realisation-kpis">
+                            <li><strong>0,505</strong><span>Gini sur données de test</span></li>
+                            <li><strong>×2,8</strong><span>profit vs modèle de référence</span></li>
+                            <li><strong>4,9 %</strong><span>taux de défaut des acceptés</span></li>
+                        </ul>
+                    </div>
+                    <ul class="tech-tags"><li>Python</li><li>LightGBM</li><li>WOE / IV</li><li>Streamlit</li><li>Docker</li></ul>
+                    <div class="realisation-liens">
+                        <a class="btn-demo" href="https://scoring-credit-couly.streamlit.app/" target="_blank" rel="noopener noreferrer">Application en ligne <span aria-hidden="true">↗</span></a>
+                        <a class="btn-gh" href="https://github.com/coulibaly-abou/scoring-credit" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                    </div>
+                </article>
+
+                <article class="realisation realisation--phare" data-cat="stat" id="projet-kebabs">
+                    <img class="realisation-image" src="./image/projets/kebabs.webp" alt="Scène 3D des kebabs et de la population à Marseille" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">SAÉ 5.EMS.01 · binôme</span>
+                        <span class="realisation-date">Novembre 2026</span>
+                    </div>
+                    <h3>Implantation des kebabs à Marseille</h3>
+                    <div class="realisation-corps">
+                        <div>
+                            <h4>Contexte</h4>
+                            <p>Aucune liste de kebabs n'existe en open data : base de 144 kebabs construite à partir d'OpenStreetMap et de SIRENE, croisée avec les carreaux Insee de 200 m et les stations.</p>
+                            <h4>Enjeux</h4>
+                            <ul>
+                                <li>Expliquer la répartition des kebabs et ce qu'elle révèle des fractures sociales</li>
+                                <li>Répondre à une question concrète : où ouvrir un nouveau kebab ?</li>
+                            </ul>
+                        </div>
+                        <ul class="realisation-kpis">
+                            <li><strong>0,93</strong><span>AUC de la régression logistique</span></li>
+                            <li><strong>78 %</strong><span>des kebabs à moins de 500 m d'une station</span></li>
+                            <li><strong>×2</strong><span>plus regroupés que la population</span></li>
+                        </ul>
+                    </div>
+                    <ul class="tech-tags"><li>Python</li><li>GeoPandas</li><li>Monte-Carlo</li><li>Régression logistique</li><li>deck.gl</li></ul>
+                    <div class="realisation-liens">
+                        <a class="btn-demo" href="https://coulibaly-abou.github.io/sae-kebabs-marseille/dashboard/kebabs_2d.html" target="_blank" rel="noopener noreferrer">Carte interactive <span aria-hidden="true">↗</span></a>
+                        <a class="btn-gh" href="https://github.com/coulibaly-abou/sae-kebabs-marseille" target="_blank" rel="noopener noreferrer">Code et rapport</a>
+                    </div>
+                </article>
+
+                <article class="realisation" data-cat="data" id="projet-etl">
+                    <img class="realisation-image" src="./image/projets/etl.webp" alt="Schéma du modèle documentaire MongoDB en 3 collections" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">SAÉ 5.02 · trinôme</span>
+                        <span class="realisation-date">Novembre 2026</span>
+                    </div>
+                    <h3>ETL Stack Exchange : XML vers PostgreSQL et MongoDB</h3>
+                    <h4>Contexte</h4>
+                    <p>Migration de 20 515 enregistrements vers un modèle relationnel (8 tables) et un modèle documentaire (3 collections), via un format pivot JSON Lines validé par JSON Schema.</p>
+                    <h4>Enjeux</h4>
+                    <ul>
+                        <li>Ne perdre aucune donnée : 27 problèmes de migration traités par 11 règles</li>
+                        <li>Comparer deux modèles de stockage pour un même jeu de données</li>
+                    </ul>
+                    <ul class="tech-tags"><li>Python</li><li>PostgreSQL</li><li>MongoDB</li><li>JSON Schema</li></ul>
+                    <div class="realisation-liens">
+                        <a class="btn-gh" href="https://github.com/coulibaly-abou/sae502-etl-stackexchange" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                    </div>
+                </article>
+
+                <article class="realisation" data-cat="data ml" id="projet-ligue1">
+                    <img class="realisation-image" src="./image/projets/ligue1.webp" alt="Tableau de bord de la Ligue 1 ivoirienne" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">Projet personnel</span>
+                        <span class="realisation-date">Octobre 2026</span>
+                    </div>
+                    <h3>Plateforme d'analyse de la Ligue 1 ivoirienne</h3>
+                    <h4>Contexte</h4>
+                    <p>Les données du championnat ivoirien sont dispersées et incomplètes : collecte web et API sur 10 saisons, stockage MongoDB puis PostgreSQL, tableau de bord Streamlit.</p>
+                    <h4>Enjeux</h4>
+                    <ul>
+                        <li>Rassembler 1 934 matchs dans une base fiable (12 tables)</li>
+                        <li>Prédire les résultats : 43,7 % de bonnes prédictions (référence : 35,4 %)</li>
+                    </ul>
+                    <ul class="tech-tags"><li>Python</li><li>MongoDB</li><li>PostgreSQL</li><li>PyTorch</li><li>Streamlit</li></ul>
+                    <div class="realisation-liens">
+                        <a class="btn-gh" href="https://github.com/coulibaly-abou/ligue1-ci-data" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                    </div>
+                </article>
+
+                <article class="realisation" data-cat="data" id="projet-carte">
+                    <img class="realisation-image" src="./image/projets/manaus.webp" alt="Carte interactive des points de collecte à Manaus" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">Module R5.02</span>
+                        <span class="realisation-date">Septembre 2026</span>
+                    </div>
+                    <h3>Carte interactive de Manaus (Brésil)</h3>
+                    <h4>Contexte</h4>
+                    <p>Carte des points de collecte et de la station météo de Manaus, générée en Python avec Folium.</p>
+                    <h4>Enjeux</h4>
+                    <ul>
+                        <li>Rendre des données géographiques consultables par tous, en ligne</li>
+                    </ul>
+                    <ul class="tech-tags"><li>Python</li><li>Folium</li><li>GitHub Pages</li></ul>
+                    <div class="realisation-liens">
+                        <a class="btn-demo" href="https://coulibaly-abou.github.io/EasyMapWebsite/ManausMap.html" target="_blank" rel="noopener noreferrer">Voir la carte <span aria-hidden="true">↗</span></a>
+                        <a class="btn-gh" href="https://github.com/coulibaly-abou/EasyMapWebsite" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                    </div>
+                </article>
+
+                <article class="realisation" data-cat="bi" id="projet-stage">
+                    <img class="realisation-image" src="./image/projets/stage.webp" alt="Chantier de construction" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">Stage · GROUPE ZOH</span>
+                        <span class="realisation-date">Avril – juin 2026</span>
+                    </div>
+                    <h3>Solution décisionnelle Power BI</h3>
+                    <h4>Contexte</h4>
+                    <p>Entreprise de BTP (Divo, Côte d'Ivoire) : centraliser les données de 180 chantiers dispersées dans plusieurs fichiers.</p>
+                    <h4>Enjeux</h4>
+                    <ul>
+                        <li>Donner à la direction une vue fiable de l'avancement des chantiers</li>
+                        <li>Repérer les chantiers à risque : 62 chantiers critiques identifiés</li>
+                    </ul>
+                    <ul class="tech-tags"><li>Power BI</li><li>Power Query</li><li>DAX</li></ul>
+                    <div class="realisation-liens">
+                        <a class="card-link" href="./html/stage.html">Voir les détails <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="realisation" data-cat="ml stat" id="projet-diabete">
+                    <img class="realisation-image" src="./image/projets/diabete.webp" alt="Médecin avec un stéthoscope" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">BUT2 · binôme</span>
+                        <span class="realisation-date">2025 – 2026</span>
+                    </div>
+                    <h3>Prédiction du diabète de type 2</h3>
+                    <h4>Contexte</h4>
+                    <p>Base Pima Indians Diabetes, avec jusqu'à 48,7 % de valeurs manquantes sur une variable.</p>
+                    <h4>Enjeux</h4>
+                    <ul>
+                        <li>Comparer modèles explicatifs et modèles de classification</li>
+                        <li>Atteindre 72,9 % de bonnes classifications</li>
+                    </ul>
+                    <ul class="tech-tags"><li>Régression</li><li>Arbre de décision</li><li>Classification</li></ul>
+                    <div class="realisation-liens">
+                        <a class="card-link" href="./html/diabete.html">Voir les détails <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="realisation" data-cat="data" id="projet-breakingbad">
+                    <img class="realisation-image" src="./image/projets/breakingbad.webp" alt="Paysage désertique" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">BUT2 · individuel</span>
+                        <span class="realisation-date">2025 – 2026</span>
+                    </div>
+                    <h3>Datawarehouse Breaking Bad</h3>
+                    <h4>Contexte</h4>
+                    <p>Construction d'une base décisionnelle complète, de la collecte par web scraping jusqu'à PostgreSQL.</p>
+                    <h4>Enjeux</h4>
+                    <ul>
+                        <li>Concevoir un flux ETL (FME) et des modèles en étoile et en flocon</li>
+                    </ul>
+                    <ul class="tech-tags"><li>Python</li><li>FME</li><li>PostgreSQL</li></ul>
+                    <div class="realisation-liens">
+                        <a class="card-link" href="./html/breakingbad.html">Voir les détails <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="realisation" data-cat="stat" id="projet-miel">
+                    <img class="realisation-image" src="./image/projets/miel.webp" alt="Cuillère à miel au-dessus d'un pot" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">BUT2 · trinôme</span>
+                        <span class="realisation-date">2025 – 2026</span>
+                    </div>
+                    <h3>Sensométrie : analyse de 4 miels</h3>
+                    <h4>Contexte</h4>
+                    <p>Panel de 143 dégustateurs et 19 descripteurs sensoriels.</p>
+                    <h4>Enjeux</h4>
+                    <ul>
+                        <li>Décrire et distinguer les miels (ACP, AFM, AFCM, CAH)</li>
+                        <li>Classer les dégustations : 58,4 % de bon classement (LDA)</li>
+                    </ul>
+                    <ul class="tech-tags"><li>ACP / AFM</li><li>CAH</li><li>LDA</li></ul>
+                    <div class="realisation-liens">
+                        <a class="card-link" href="./html/miel.html">Voir les détails <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="realisation" data-cat="bi" id="projet-meteo">
+                    <img class="realisation-image" src="./image/projets/meteo.webp" alt="Ciel nuageux et rayons de soleil" width="800" height="450" loading="lazy">
+                    <div class="realisation-tete">
+                        <span class="realisation-type">BUT2 · binôme</span>
+                        <span class="realisation-date">2025 – 2026</span>
+                    </div>
+                    <h3>Station météo connectée (IoT)</h3>
+                    <h4>Contexte</h4>
+                    <p>Chaîne de mesure (température, humidité, pression, luminosité) transmise en Bluetooth.</p>
+                    <h4>Enjeux</h4>
+                    <ul>
+                        <li>Stocker les mesures (MySQL, Google Sheets) et les consulter sur mobile</li>
+                    </ul>
+                    <ul class="tech-tags"><li>Arduino / C++</li><li>PHP</li><li>MySQL</li></ul>
+                    <div class="realisation-liens">
+                        <a class="card-link" href="./html/but2.html">Voir les détails <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+
+            </div>
+
         </div>
     </section>
 
@@ -533,117 +712,6 @@
         </div>
     </section>
 
-    <!-- FORMATION -->
-    <section class="formation" id="formation">
-        <div class="section-container">
-            <span class="section-kicker">Parcours</span>
-            <h2>Ma formation</h2>
-
-            <div class="formation-timeline formation-timeline--grid">
-
-                <article class="card credential-card">
-                    <div class="credential-head">
-                        <span class="credential-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
-                        </span>
-                        <div>
-                            <h3>BUT Sciences des Données</h3>
-                            <a class="credential-org" href="./html/cv.html">Université Perpignan Via Domitia — Campus de Carcassonne</a>
-                            <span class="credential-date">2024 – aujourd'hui · 3<sup>e</sup> année</span>
-                        </div>
-                        <a class="credential-external" href="./html/cv.html" aria-label="Voir mon CV" title="Voir mon CV">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
-                        </a>
-                    </div>
-                    <p>
-                        Formation généraliste en science des données, spécialisée depuis la 2<sup>e</sup> année
-                        dans le parcours <strong>Exploration et Modélisation Statistique</strong> — statistiques,
-                        programmation, bases de données et Business Intelligence.
-                    </p>
-                    <div class="learnings-box">
-                        <span class="credential-icon credential-icon--sm" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><path d="M2 5c3-1.5 6-1.5 9 0v14c-3-1.5-6-1.5-9 0V5z"/><path d="M22 5c-3-1.5-6-1.5-9 0v14c3-1.5 6-1.5 9 0V5z"/></svg>
-                        </span>
-                        <div>
-                            <h4>Apprentissages clés :</h4>
-                            <p>
-                                Python, R, SQL et Power BI ; modélisation statistique et prédictive ; collecte
-                                et nettoyage de données (scraping, ETL) ; conception de bases de données
-                                relationnelles.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="card credential-card">
-                    <div class="credential-head">
-                        <span class="credential-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
-                        </span>
-                        <div>
-                            <h3>Licence 1 — Mathématiques et Informatique</h3>
-                            <a class="credential-org" href="./html/cv.html">Université Félix Houphouët-Boigny — Abidjan, Côte d'Ivoire</a>
-                            <span class="credential-date">2023 – 2024</span>
-                        </div>
-                        <a class="credential-external" href="./html/cv.html" aria-label="Voir mon CV" title="Voir mon CV">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
-                        </a>
-                    </div>
-                    <p>
-                        Première année de licence en mathématiques et informatique, avant de partir poursuivre
-                        mes études en France, à l'IUT de Carcassonne, en BUT Sciences des Données.
-                    </p>
-                    <div class="learnings-box">
-                        <span class="credential-icon credential-icon--sm" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><path d="M2 5c3-1.5 6-1.5 9 0v14c-3-1.5-6-1.5-9 0V5z"/><path d="M22 5c-3-1.5-6-1.5-9 0v14c3-1.5 6-1.5 9 0V5z"/></svg>
-                        </span>
-                        <div>
-                            <h4>Apprentissages clés :</h4>
-                            <p>
-                                Fondamentaux mathématiques (algèbre, analyse) et bases de l'algorithmique et de
-                                la programmation.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="card credential-card">
-                    <div class="credential-head">
-                        <span class="credential-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
-                        </span>
-                        <div>
-                            <h3>Baccalauréat Scientifique</h3>
-                            <a class="credential-org" href="./html/cv.html">Lycée Municipal d'Affery — Côte d'Ivoire</a>
-                            <span class="credential-date">2022</span>
-                        </div>
-                        <a class="credential-external" href="./html/cv.html" aria-label="Voir mon CV" title="Voir mon CV">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
-                        </a>
-                    </div>
-                    <p>
-                        Baccalauréat série scientifique, avec une spécialité Mathématiques Expertes en
-                        Terminale — le point de départ de mon goût pour le raisonnement logique et
-                        mathématique.
-                    </p>
-                    <div class="learnings-box">
-                        <span class="credential-icon credential-icon--sm" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2"><path d="M2 5c3-1.5 6-1.5 9 0v14c-3-1.5-6-1.5-9 0V5z"/><path d="M22 5c-3-1.5-6-1.5-9 0v14c3-1.5 6-1.5 9 0V5z"/></svg>
-                        </span>
-                        <div>
-                            <h4>Apprentissages clés :</h4>
-                            <p>
-                                Spécialité Mathématiques Expertes ; premières bases du raisonnement
-                                scientifique et logique.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
     <!-- MES FORCES -->
     <section class="forces" id="forces">
         <div class="section-container">
@@ -759,6 +827,75 @@
         </div>
     </section>
 
+    <!-- PASSIONS -->
+    <section class="passions" id="passions">
+        <div class="section-container">
+            <span class="section-kicker">En dehors des données</span>
+            <h2>Ce que j'aime</h2>
+            <p class="section-intro">
+                Ce qui m'occupe quand je ne code pas, et qui nourrit souvent mes projets.
+            </p>
+
+            <div class="passions-grille">
+
+                <figure class="passion passion--large">
+                    <img src="./image/passions/football.webp" alt="Ballon de football sur une pelouse" width="720" height="540" loading="lazy">
+                    <figcaption>
+                        <span class="passion-tag">Sport</span>
+                        <h3>Football</h3>
+                        <p>Une passion depuis l'enfance, pour sa tactique et son esprit collectif. C'est elle qui m'a donné l'idée de ma plateforme d'analyse de la Ligue 1 ivoirienne.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="passion">
+                    <img src="./image/passions/musculation.webp" alt="Salle de musculation avec haltères et banc" width="720" height="540" loading="lazy">
+                    <figcaption>
+                        <span class="passion-tag">Sport</span>
+                        <h3>Musculation</h3>
+                        <p>Une séance régulière qui m'apprend la discipline et la patience.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="passion">
+                    <img src="./image/passions/musique.webp" alt="Guitares et clavier dans une pièce lumineuse" width="720" height="540" loading="lazy">
+                    <figcaption>
+                        <span class="passion-tag">Culture</span>
+                        <h3>Musique</h3>
+                        <p>Hip-hop, électro ou classique selon le moment : elle m'accompagne quand je travaille.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="passion">
+                    <img src="./image/passions/livres.webp" alt="Étagères de bibliothèque remplies de livres" width="720" height="540" loading="lazy">
+                    <figcaption>
+                        <span class="passion-tag">Sciences</span>
+                        <h3>Livres scientifiques</h3>
+                        <p>Mathématiques, statistiques, intelligence artificielle : j'aime comprendre comment les choses fonctionnent.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="passion">
+                    <img src="./image/passions/documentaires.webp" alt="La Terre vue depuis l'espace" width="720" height="540" loading="lazy">
+                    <figcaption>
+                        <span class="passion-tag">Sciences</span>
+                        <h3>Documentaires scientifiques</h3>
+                        <p>Espace, physique, technologie : une façon de découvrir de nouveaux sujets et de garder l'esprit curieux.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="passion passion--banniere">
+                    <img src="./image/passions/mangas.webp" alt="Mur d'affiches de mangas et de films d'animation" width="720" height="540" loading="lazy">
+                    <figcaption>
+                        <span class="passion-tag">Culture</span>
+                        <h3>Mangas</h3>
+                        <p>Des récits de persévérance et de travail en équipe que je lis avec plaisir, et qui m'inspirent.</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="contact" id="contact">
         <div class="section-container">
@@ -791,9 +928,15 @@
                     <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
                 </div>
 
-                <button type="submit" class="btn-submit">Envoyer</button>
+                <button type="submit" class="btn-submit">Envoyer le message</button>
 
             </form>
+
+            <div class="contact-reseaux">
+                <span>Ou retrouvez-moi sur</span>
+                <a href="https://www.linkedin.com/in/aboubakar-coulibaly-b028962bb/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/coulibaly-abou" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
         </div>
     </section>
 
@@ -845,6 +988,8 @@
 
     </div>
 </footer>
+
+<script src="./js/realisations.js" defer></script>
 
 </body>
 </html>
